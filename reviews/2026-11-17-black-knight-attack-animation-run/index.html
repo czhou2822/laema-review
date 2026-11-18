@@ -300,16 +300,93 @@ button,select{font:inherit;font-size:12px;padding:8px 12px;border:1px solid #455
     const a=event.target.closest('a[href]');if(!a)return;const path=find(a.href);if(!path)return;event.preventDefault();
     download(bytes(path),path.split('/').at(-1),bundle.files[path].mime);
   });
+function addDirectFeedback(root, prepareSnapshot) {
+  const inbox = new URL('https://laema-review-feedback.zhouck0811.chatgpt.site/');
+  const submit = document.createElement('button');
+  const status = document.createElement('p');
+  submit.type = 'button';
+  submit.textContent = 'Submit saved feedback';
+  status.setAttribute('role', 'status');
+  root.prepend(submit, status);
+  const help = document.createElement('p');
+  help.textContent = 'Save each item, then submit. First visit? ';
+  const signIn = document.createElement('a');
+  signIn.href = new URL('/signin-with-chatgpt?return_to=%2F', inbox).href;
+  signIn.target = '_blank';
+  signIn.rel = 'noopener noreferrer';
+  signIn.textContent = 'Sign in to the private inbox';
+  help.append(signIn, ', then return here.');
+  root.append(help);
+
+  submit.addEventListener('click', async () => {
+    const nonce = crypto.randomUUID();
+    inbox.hash = nonce;
+    // Open in the click handler so the browser can apply the user's popup preference.
+    const popup = window.open(inbox.href, '_blank', 'popup,width=540,height=420');
+    if (!popup) {
+      status.textContent = 'Allow the private submission window, then try again. Your saved feedback is still here.';
+      return;
+    }
+    submit.disabled = true;
+    status.textContent = 'Connecting to the private inbox…';
+    let payload, ready = false, sent = false, timer, closedCheck;
+    const finish = message => {
+      clearTimeout(timer);
+      clearInterval(closedCheck);
+      window.removeEventListener('message', handleMessage);
+      submit.disabled = false;
+      status.textContent = message;
+    };
+    const transfer = () => {
+      if (!ready || !payload || sent) return;
+      sent = true;
+      status.textContent = 'Waiting for a receipt…';
+      popup.postMessage({kind: 'laema-feedback-snapshot', nonce, payload}, inbox.origin);
+    };
+    const handleMessage = event => {
+      if (event.origin !== inbox.origin || event.source !== popup || event.data?.nonce !== nonce) return;
+      if (event.data.kind === 'laema-feedback-ready') {
+        ready = true;
+        transfer();
+      } else if (event.data.kind === 'laema-feedback-receipt' && payload &&
+          event.data.result?.snapshot_sha256 === payload.handoff.snapshot_sha256 &&
+          event.data.result?.candidate_sha256 === payload.handoff.candidate_sha256 &&
+          event.data.result?.run_id === payload.handoff.run_id &&
+          /^[0-9a-f-]{36}$/.test(event.data.result?.id ?? '')) {
+        finish('Submitted to the private inbox. Receipt ' + event.data.result.id + '.');
+        popup.close();
+      } else if (event.data.kind === 'laema-feedback-error') {
+        finish(event.data.message || 'Could not confirm submission. Your feedback is still saved here.');
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    closedCheck = setInterval(() => {
+      if (popup.closed) finish('No receipt received. If you just signed in, submit again from this page.');
+    }, 1000);
+    timer = setTimeout(() => finish('No receipt received. Sign in if needed, then retry. Your feedback is still saved here.'), 120000);
+    try {
+      payload = await prepareSnapshot();
+      transfer();
+    } catch (error) {
+      finish(error.message);
+      popup.close();
+    }
+  });
+}
+
   window.FanorPortable={
     viewport: id => bundle.viewports[id],
     async setupHandoff({run,manifestHash,request,data}){
       const root=document.createElement('section');root.id='feedbackHandoff';root.className='card';
-      root.innerHTML='<h2 class="sr-only">Feedback export</h2><p>Saved on this device · nothing is sent.</p><button type="button">Download selected saved feedback</button><p role="status"></p><details><summary>Export details</summary><p>Save feedback first, then download the saved snapshot. Unsent drafts and other candidates are excluded. Nothing is sent to Edith or Jarvis, and no new iteration starts. Attach the downloaded JSON in ChatGPT when you want to hand it over.</p></details>';
+      root.innerHTML='<h2 class="sr-only">Feedback export</h2><p>Saved on this device · nothing is sent.</p><button type="button">Download selected saved feedback</button><p role="status"></p><details><summary>Export details</summary><p>Save feedback first, then download the saved snapshot. Unsent drafts and other candidates are excluded. Downloading a copy keeps it on this device. Use Submit saved feedback to send it privately. Attach the downloaded JSON in ChatGPT when you want to hand it over.</p></details>';
       document.getElementById('runProgress').before(root);const button=root.querySelector('button'),status=root.querySelector('[role=status]');
       const show=async()=>{try{const entries=(await request(data.feedback_api+'/handoff')).entries.filter(e=>e.snapshot.run_id===run.id&&e.snapshot.candidate_sha256===run.candidate_sha256);status.textContent=entries.length?'Local export snapshot saved; not sent or acknowledged.':'No export prepared for this candidate.';}catch(e){status.textContent='Feedback storage unavailable: '+e.message;}};
-      button.onclick=async()=>{button.disabled=true;try{const result=await request(data.feedback_api+'/handoff',{run_id:run.id,candidate_sha256:run.candidate_sha256,manifest_sha256:manifestHash});
-        download({format:'fanor-portable-feedback-handoff',schema_version:1,collection_id:bundle.collection_id,source_revision:bundle.source_revision,manifest_sha256:digest,snapshot_hash_encoding:'SHA-256 of recursively key-sorted compact JSON, UTF-8',handoff:result.handoff},run.id+'-saved-feedback.json');
-        status.textContent=(result.duplicate?'Existing unchanged snapshot downloaded. ':'Saved snapshot downloaded. ')+'Not sent or acknowledged; drafts excluded.';
+      const prepareSnapshot = async () => { const result=await request(data.feedback_api+'/handoff',{run_id:run.id,candidate_sha256:run.candidate_sha256,manifest_sha256:manifestHash});
+        return {payload:{format:'fanor-portable-feedback-handoff',schema_version:1,collection_id:bundle.collection_id,source_revision:bundle.source_revision,manifest_sha256:digest,snapshot_hash_encoding:'SHA-256 of recursively key-sorted compact JSON, UTF-8',handoff:result.handoff}, duplicate:result.duplicate}; };
+      addDirectFeedback(root, async () => (await prepareSnapshot()).payload);
+      button.onclick=async()=>{button.disabled=true;try{const {payload,duplicate}=await prepareSnapshot();
+        download(payload,run.id+'-saved-feedback.json');
+        status.textContent=(duplicate?'Existing unchanged snapshot downloaded. ':'Saved snapshot downloaded. ')+'Not sent or acknowledged; drafts excluded.';
       }catch(e){status.textContent='Not exported: '+e.message;}finally{button.disabled=false;}};await show();
     }
   };
