@@ -638,6 +638,8 @@ function addAnimationFeedback(root, run, canonicalURL, manifestHash) {
     return el;
   };
   const panel = item('details', null, 'card review-timeline');
+  panel.id = 'review-timeline';
+  panel.open = here.hash === '#review-timeline';
   panel.append(item('summary', 'Run timeline'));
   document.querySelector('main > header').after(panel);
   const label = {
@@ -655,9 +657,10 @@ function addAnimationFeedback(root, run, canonicalURL, manifestHash) {
     el.title = value;
     return el;
   };
+  const asList = value => Array.isArray(value) ? value : [];
   function eventList(events) {
     const list = item('ol', null, 'timeline-events');
-    for (const event of events) {
+    for (const event of asList(events)) {
       const row = item('li'), status = item('span', label[event.status] || 'Unknown', 'timeline-status');
       status.dataset.state = event.status;
       row.append(time(event.at), status, item('span', event.label));
@@ -719,16 +722,15 @@ function addAnimationFeedback(root, run, canonicalURL, manifestHash) {
         row.append(eventList(attempt.events));
         body.append(row);
       }
-      if (attack.unassigned_events.length) {
+      const unassignedEvents = asList(attack.unassigned_events);
+      if (unassignedEvents.length) {
         const extras = item('details');
-        extras.append(item('summary','Events without a verified attempt link'), eventList(attack.unassigned_events));
+        extras.append(item('summary','Events without a verified attempt link'), eventList(unassignedEvents));
         body.append(extras);
       }
     }
     selector.addEventListener('change', render);
     render();
-    if (here.hash === '#review-timeline') panel.open = true;
-    panel.id = 'review-timeline';
   }
   load().then(display).catch(error => panel.append(item('p', error.message)));
 })();
