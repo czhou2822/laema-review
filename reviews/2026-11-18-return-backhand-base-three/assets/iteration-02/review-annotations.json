@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-BASE-02",
+  "candidate_sha256": "7d94b54747b4af6e59ac6c7436676ae3205689ef50f276cdb89bf648f537fcab",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T15:52:26.752888+00:00",
+  "provenance": "Regions from the independent initial assessment of the exact candidate.",
+  "issues": [
+    {
+      "id": "RB-BLADE-PLANE",
+      "frame": 6,
+      "label": "Upward-facing blade plane remains ambiguous",
+      "reason": "At F5 and F6 the candidate preserves the same silhouette and mainly changes a thin hue/contrast gradient toward the guard and inside the bright strip. The large white band and darker lower boundary read much like R04 at matched scale. A clear read would distinguish a top plane across the active rearward cut in matched views while holding this width and grasp. Confirmation in watched native timing is still needed.",
+      "severity": "Major",
+      "evidence_status": "Established at matched still scale; perceptual result at continuous rate unverified",
+      "state": "open",
+      "confidence": "moderate",
+      "region": [
+        441,
+        342,
+        75,
+        35
+      ]
+    },
+    {
+      "id": "RB-F6-THIGH-REIN-SEAM",
+      "frame": 6,
+      "label": "Thigh highlight and adjacent tack still meet at a horizontal step",
+      "reason": "The magnified F6 comparison shows an abrupt horizontal interruption beneath the waist across the armored thigh into adjacent tackle/diagonal strap. The candidate changes stop left of that break. The more visible upper rein reads through to its bit; the issue is the nearby strap/join and interrupted armor shading, separate from the improved tail or blade continuity. Observable repair is continuous local armor and strap paths without disturbing their surrounding pose.",
+      "severity": "Minor",
+      "evidence_status": "Established",
+      "state": "open",
+      "confidence": "high",
+      "region": [
+        532,
+        369,
+        104,
+        28
+      ]
+    }
+  ],
+  "improvements": [
+    {
+      "id": "RB-F6-TAIL-CLOTH",
+      "region": [
+        449,
+        383,
+        83,
+        31
+      ],
+      "frame": 6,
+      "label": "Tail/cloth continuity improved",
+      "reason": "Tail/cloth continuity improved",
+      "confidence": "Recorded matched-still observation",
+      "sourceObservationId": "RB-F6-TAIL-CLOTH"
+    },
+    {
+      "id": "RB-F6-CONNECTED-LEVER",
+      "region": [
+        440,
+        344,
+        100,
+        32
+      ],
+      "frame": 6,
+      "label": "Slender connected blade, guard and glove retained",
+      "reason": "Slender connected blade, guard and glove retained",
+      "confidence": "Recorded matched-still observation",
+      "sourceObservationId": "RB-F6-CONNECTED-LEVER"
+    }
+  ]
+}

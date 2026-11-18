@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "feedback_api": "/api/run-feedback/return-backhand-base-three",
+  "iteration_review": true,
+  "title": "Return Backhand · Trials from R04",
+  "default_run": "RETURN-BACKHAND-BASE-01",
+  "runs": [
+    {
+      "id": "RETURN-BACKHAND-BASE-01",
+      "title": "Return Backhand · Blade-plane shading",
+      "selection_label": "Trial 1 · Blade-plane shading",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-base-01",
+      "candidate_sha256": "46584a348ee02698d81b3a9c94c23d6b8a53f96e0e73d1362ca764186b63ee37",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "Review complete · blade facing unresolved",
+      "gain_summary": "Clearer upper and lower shading in the active-frame close-ups. Slender width, hilt connection and registration are preserved.",
+      "remaining_summary": "Upward-facing plane remains ambiguous at 1:1. The frame-6 mount and rider seams are inherited.",
+      "edith_user_facing_summary": "I agree with the two open findings. In the matched frame 5 and 6 stills and blade close-ups, I can see the brighter upper strip and darker underside. At the scale of the whole mount, I read the same slender saber with stronger contrast. The trial demonstrates a local lighting change with preserved blade width and guard connection. The raw image return also contains a dark surround and stray bright fragments. Those did not carry into the assembled art. Both outcomes matter when choosing how much of a generated patch to use.\n\nI also verified the frame 6 discontinuity in the R04 pixels and the trial 1 comparison. There are horizontal steps across the tail and red cloth around cell-local y397 and across the rider's thigh and reins around y378. The blade remains joined to the hilt. The inherited seam is visually actionable in a small registered area, so trial 2 will include a bounded generated repair of the two joins. Its result can be checked separately from the saber. This is a test of whether the tool produces a usable local repair in this case.\n\nFor the next saber trial, carry the face cue into the gold guard and wrist armor at the grip. A legible, continuous turn of those adjacent surfaces may make the rotated plane more apparent than shading the same strip by itself. Keep blade width and its outer path fixed so a silhouette change cannot account for a gain. Judge the saber independently of any seam repair. Preserve trial 1 for its narrower comparison.",
+      "scope": "Test a coherent upper blade plane and darker underside bevel on original R04 frames 5 and 6. Preserve the native saber width, outline, hilt connection, guard, mounted pose, eight drawings and timing.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T15:36:18Z",
+        "decision": "REVIEW_COMPLETE",
+        "summary": "Trial 1 makes the upper light band on the saber easier to distinguish from its darker underside in the two active drawings. I can see the tonal separation in close-up and a restrained change in the 1:1 comparison. The intended upward-facing plane still does not read reliably as a distinct orientation in my native-size still comparison. The outline, slender projected width and connection to the guard stay intact. A pre-existing drawing 6 discontinuity through the horse's tail, tack and rider is carried over unchanged.",
+        "gains": [
+          "At close-up the candidate shifts emphasis to the upper highlight and darkens the lower band in drawings 5 and 6, making the subtle top-versus-underside distinction sharper.",
+          "At 1:1 the saber stays slender and connected to its guard in both active drawings. Its tip, outer silhouette and hilt did not shift. The mounted identity, hoof placement, body registration and eight drawing positions are preserved from R04.",
+          "The artifact preview encodes the same eight holds as the current native resource, totaling 1.290 seconds."
+        ],
+        "remaining": [
+          "An upward-facing plane remains an equivocal reading at 1:1 in drawings 5 and 6. The dominant cue is still a narrow blade with different lighting.",
+          "Drawing 6 carries the base's horizontal joins through the tail and saddle area and through the rider's thigh and nearby reins.",
+          "The APNG was inspected as a still and decoded for timing. A watched synchronized clip or gameplay capture would be needed to establish how the cue reads in motion."
+        ],
+        "inspection": "Compared the original R04 and assembled trial across drawings 1–8 using the matched full-pose still sheets, unresampled 1:1 still crops of the active drawings, and the blade detail close-ups. Inspected the actual image-generation return as a separate visual artifact. The generated return contains dark surround and stray bright fragments near the helmet, which do not appear in the assembled candidate. The APNG image viewer displayed the initial still only. Independently decoded all eight APNG frame durations, but did not watch continuously timed motion. Source timing and encoded holds agree. Camera, encounter scale, transitions from/to idle in gameplay, in-motion telegraph readability, collision and player feel are unobserved.",
+        "confidence": "High for visual still comparison, alpha/silhouette preservation and encoded timing. Medium for the inferred orientation ambiguity at 1:1. No motion or in-game confidence is assigned."
+      },
+      "human_feedback": "Creative acceptance pending.",
+      "playback_coverage": "Ultron inspected eight matched stills and decoded playback timing. Continuous motion judgment is pending.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original R04 atlas"
+        },
+        {
+          "path": "iteration-01/candidate.png",
+          "sha256": "46584a348ee02698d81b3a9c94c23d6b8a53f96e0e73d1362ca764186b63ee37",
+          "role": "Registered trial atlas"
+        },
+        {
+          "path": "iteration-01/imagegen-return.png",
+          "sha256": "c413627e292c8876c212e1c978cc704638171838c9be1ab6cd8c8cc1cc67ae77",
+          "role": "Exact ImageGen return"
+        },
+        {
+          "path": "iteration-01/matched-frames-1-4.png",
+          "sha256": "e5f9c6938a7d05454bf3078b129be81b0cfb050361c8a2a41d41b25e5728b14c",
+          "role": "Fixed comparison · drawings 1–4"
+        },
+        {
+          "path": "iteration-01/matched-frames-5-8.png",
+          "sha256": "4bc24bd9feb5ada4245c5f2073a00019a2f23640efa7c8db689b0d3529ef16fa",
+          "role": "Fixed comparison · drawings 5–8"
+        },
+        {
+          "path": "iteration-01/matched-blade-detail.png",
+          "sha256": "e022eea372dc51ca0604aea9a615f9d1ed370d5f514a94369d0e0b75fdb3351f",
+          "role": "Matched blade detail"
+        },
+        {
+          "path": "iteration-01/matched-playback.png",
+          "sha256": "4d200df0f7bdab1d8a6166040e72f018393ff0e87a1b71287b97a7481c83c8ab",
+          "role": "Paired native-clock browser playback"
+        }
+      ],
+      "config": {
+        "path": "iteration-01/config.json",
+        "sha256": "fcf9ccadaf6ffaaf0818b27751dae3407e097225beab1721f14b2f2008aead74"
+      },
+      "review_annotations": {
+        "path": "iteration-01/review-annotations.json",
+        "sha256": "c21f13e40c19321ec447df22a81a816ba144f2e3b7a35482b62fcd90fd71ca0e"
+      },
+      "role_trace": {
+        "path": "iteration-01/role-trace.json",
+        "sha256": "94e5060eded866c89d81fbc6274853fe4cb1016c6909290aacd930ea4b58406e"
+      },
+      "focus_time": 0.55
+    },
+    {
+      "id": "RETURN-BACKHAND-BASE-02",
+      "title": "Return Backhand · Blade, grip and frame-6 join",
+      "selection_label": "Trial 2 · Blade, grip and frame-6 join",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-base-02",
+      "candidate_sha256": "7d94b54747b4af6e59ac6c7436676ae3205689ef50f276cdb89bf648f537fcab",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "Review complete · creative acceptance pending",
+      "gain_summary": "Frame 6, 640 ms: the upper sweep of tail strands meets the lower tail more continuously and the red cloth no longer starts against the obvious horizontal cut seen in R04 and the cue-only control. The repair leaves a slight local interpolation softness.",
+      "remaining_summary": "The new hue/value rolloff inside the silver band is subtle. It does not produce a confidently distinct top plane at the supplied matched full-pose scale, and stills cannot resolve its readability at native speed.",
+      "edith_user_facing_summary": "I agree that the blade cue remains inconclusive in the full-pose stills. The blade-and-grip detail shows a slight tonal change, while the source, cue-only and assembled poses read very similarly at the same scale. The candidate preserves the slender shape and connection through the guard. The cue-only control helps isolate this observation from the tail repair.\n\nThe frame 6 tail and cloth join is visibly more continuous. The sharp horizontal cut becomes a softer local transition, with some interpolation softness. The shortened evaluation crop also makes it clear that the horizontal break higher up through the armored thigh and diagonal tack strap is still there. The applied tail patch stops short of that region. The two observations support using a separately framed upper-join patch in trial 3, with enough unchanged contour on both sides for alignment. The evidence establishes a localized useful repair in trial 2 and leaves the adjoining patch unresolved. It does not establish a general tool limit. Trial 2 and its successful patch stay available for inspection. Trial 3 starts afresh from R04 and will leave the lower join untouched to isolate the new upper-join test.\n\nThe final saber attempt asks for actual projected facet geometry rather than another soft contrast adjustment. The renderer may reallocate small amounts of silhouette around the existing local centerline where needed to depict an upper blade face and a lower bevel. The measured blade span, guard anchor, tip, sweep and slender taper remain the width and registration controls. This tests whether a small change in projection can produce a face-up reading that survived neither of the earlier treatments at comparable still scale.\n\nI reused my independently read Fanor 0.3.9 instructions, Swink’s *Game Feel* chapter 9, printed pp. 151–158, and Laema gameplay source from `edith-source.json` (SHA-256 `92630a05331c0da0bf80bfc5230c0f09ac1df4f36ddf51f30546588d0374a625`). I reverified the Fanor version/revision, the same book and R04 hashes, the same clean Laema revision, and the native animation clock and texture binding. Swink’s distinction between an observable cue and the physical property the observer infers still applies. The gameplay source identifies the same rearward cut, active drawings and timing. I inspected the frame 5/6 cue-only full-pose comparison, the saber and seam close-ups, and the raw generation return as stills. I made no in-motion or gameplay judgment.",
+      "scope": "Test a coordinated plane across the saber, gold guard and cuff in R04 drawings 5 and 6 while holding blade width and outline fixed. Evaluate two bounded frame-6 seam patches separately.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T15:52:26.752888+00:00",
+        "decision": "REVIEW_COMPLETE",
+        "summary": "The candidate keeps the slender, attached saber through the rearward active poses. Its gentler facet contrast is discernible in enlarged stills but yields no dependable new impression that the blade turns upward. Independently, frame 6 removes the conspicuous straight break through the tail/cloth join while a horizontal discontinuity remains through the rider's thigh and adjacent tack. Mounted silhouette, hooves and preview clock are preserved.",
+        "gains": [
+          "Frame 6, 640 ms: the upper sweep of tail strands meets the lower tail more continuously and the red cloth no longer starts against the obvious horizontal cut seen in R04 and the cue-only control. The repair leaves a slight local interpolation softness.",
+          "F5/F6: the same narrow projected saber silhouette and reach are retained. The continuous route from black glove through gold guard and silver steel to the tip is visible in both active frames, including F6.",
+          "The mounted silhouette and floor placement remain intact. Frames 1–4 and 7–8 are pixel-identical to R04, and the F5/F6 changes lie above the hooves. The paired APNG encodes all eight native poses and the 1,290 ms clock."
+        ],
+        "remaining": [
+          "The new hue/value rolloff inside the silver band is subtle. It does not produce a confidently distinct top plane at the supplied matched full-pose scale, and stills cannot resolve its readability at native speed.",
+          "The horizontal frame-6 thigh/adjacent tack seam is still visible in matching magnified crops. In particular the armor highlight and nearby diagonal strap visibly jump at the join even after the tail/cloth repair.",
+          "Motion at continuous native rate, gameplay feel, and final creative acceptance remain unverified."
+        ],
+        "inspection": "Visually compared supplied original and current candidate through matched stills 1–4 and 5–8, blade and F6 seam details, original-seam cue control, native-cell crops and a same-scale contact sheet of all eight decoded APNG images. Decoded frame durations 180/140/140/90/90/140/160/350 ms, matching the current source key times and 1,290 ms length; the APNG is looping, whereas the authored game action is non-looping. I inspected all decoded timed pictures as stills; I did not watch continuous real-time playback. Verified original and candidate SHA-256 and made exact per-frame RGBA comparisons. Candidate changes F5 [432,328,102,27] and F6 [446,342,93,69]. F5 has zero alpha differences. F6 alpha differences are confined to [450,387,25,24] below the blade. The cue-only F6 atlas differs from the candidate only in the tail/cloth patch [450,386,80,25]; F5 cue-only and candidate are identical. Inspected the exact raw imagegen return as a separate image: it has strong background haze, paired partial figures cropping out the legs, and small floating forms near the heads. Those features are absent in the evaluated full candidate as viewed on the common matte. No Godot, game, editor, test or build was run.",
+        "confidence": "High on exact preserved projected blade contour, lever connection, hoof registration, source/preview timing, localized tail improvement and remaining thigh/tack join. Moderate on failure of the design-facing cue under the supplied rendered conditions, since the facing cue is a perceptual claim and I only saw stills."
+      },
+      "human_feedback": "Creative acceptance pending.",
+      "playback_coverage": "Ultron independently reviewed matched stills and checked the encoded playback clock. See assessment for exact coverage.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original R04 atlas"
+        },
+        {
+          "path": "iteration-02/candidate.png",
+          "sha256": "7d94b54747b4af6e59ac6c7436676ae3205689ef50f276cdb89bf648f537fcab",
+          "role": "Registered trial atlas"
+        },
+        {
+          "path": "iteration-02/imagegen-return.png",
+          "sha256": "d1246da7b508b6e2782ff181428fcff4c62358023287e96650df00c884e36f90",
+          "role": "Exact ImageGen return"
+        },
+        {
+          "path": "iteration-02/matched-frames-1-4.png",
+          "sha256": "fb6e87b0afe727e11b3222820ae02e52884662fb612fc4f17c164de5d3bfe280",
+          "role": "Fixed comparison · drawings 1–4"
+        },
+        {
+          "path": "iteration-02/matched-frames-5-8.png",
+          "sha256": "3f67ef08313082651948650bca97ab30297e6a0ba303f77b9c6410b83a388469",
+          "role": "Fixed comparison · drawings 5–8"
+        },
+        {
+          "path": "iteration-02/matched-blade-detail.png",
+          "sha256": "602da3463aee0f74a12692cdb5a0f5b755ee08eb300b3b8c17c0e7b1cf43c703",
+          "role": "Matched blade detail"
+        },
+        {
+          "path": "iteration-02/matched-playback.png",
+          "sha256": "114ebd9ed47b58852a6ec2c768e0bfd95d63ccbdc53b6052bb331cd55781a36a",
+          "role": "Paired native-clock browser playback"
+        },
+        {
+          "path": "iteration-02/cue-only.png",
+          "sha256": "dbf1f18cc7f701e25bc9afa819dd6bed53d9a5b715a14098e06d40eed742dadf",
+          "role": "Saber study with original seam pixels"
+        },
+        {
+          "path": "iteration-02/matched-cue-control.png",
+          "sha256": "10eeabbef5a808e0d1330d2e5e4d3090e80492d556d5a055efa19aca8f00f060",
+          "role": "Saber cue comparison with seam held fixed"
+        },
+        {
+          "path": "iteration-02/matched-seam-detail.png",
+          "sha256": "0d98bdbc693c3bccd1af025b73e699fe89a01b5b81d7121d34aef9470347e9fa",
+          "role": "Matched frame-6 seam detail"
+        }
+      ],
+      "config": {
+        "path": "iteration-02/config.json",
+        "sha256": "acec76779c0d5d4958a7b1b0272a54d0e86b75c3104073f7a39c9503cd771e11"
+      },
+      "review_annotations": {
+        "path": "iteration-02/review-annotations.json",
+        "sha256": "a6c8347d2ea3e437f2718a34a078cd7060bb99a6c806df6c226bd369b10c6441"
+      },
+      "role_trace": {
+        "path": "iteration-02/role-trace.json",
+        "sha256": "b956bf3ad48d8f4341365f7c959c552b0a009a2e334a6a30e7ff7a61b2ed78d7"
+      },
+      "focus_time": 0.55
+    },
+    {
+      "id": "RETURN-BACKHAND-BASE-03",
+      "title": "Return Backhand · Blade facets and upper frame-6 join",
+      "selection_label": "Trial 3 · Blade facets and upper frame-6 join",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-base-03",
+      "candidate_sha256": "e66241de86a61eb709520216d63b1265eab2211070ca84c62ac8d4a0f0c177d5",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "Review complete · creative acceptance pending",
+      "gain_summary": "F6 upper thigh plate reads as one rounded surface in the candidate. The bright plane and over-edge shadow continue through the horizontal break visible in both R04 and the cue control. Adjacent dark tack reads less interrupted near the thigh; this is a small local change.",
+      "remaining_summary": "F5/F6 bevel shading is weaker than a reliably upward-facing plane at matched scale. More zoom reveals changes to highlight placement without resolving the ambiguity. No blade width inflation or visible gap was found.",
+      "edith_user_facing_summary": "I agree with the open blade-facing findings. Trial 3’s raw close-up shows a distinct bright surface and dark bevel. At matched scale on the assembled sprite, both active poses still read to me as the same slender saber with a different steel finish. The assembled candidate retained R04’s exact alpha, so this is evidence for the transferred shading within the preserved outline. It does not establish a readable change in projected geometry or show that such a change is impossible. The restrained blade width and connected glove, guard and tip are visible preservation gains across the trials. Upward facing remains an open criterion.\n\nFrame 6’s thigh plate has a more continuous highlight, and the adjacent tack reads more coherently across the former horizontal break. This is a local gain visible in the current still and against the cue-only control. The separate, lower break through the tail and red cloth remains in trial 3. Trial 2 had softened that lower break while retaining the upper one. The two candidates preserve complementary local repairs from R04, each inspectable on its own. Trial 1 is useful as a controlled comparison for the brighter blade strip and darker underside. Its cue is clearer enlarged, but too slight to settle orientation at matched scale. Trial 2’s more restrained saber and grip treatment also left the orientation ambiguous.\n\nI inspected the raw triptych, matched full-pose comparison and control, and the blade and seam close-ups. My decoded comparison confirmed identical alpha in every cell, with RGB differences confined to drawings 5 and 6. The synchronized preview encodes all eight native holds totaling 1.290 seconds. The observations are from stills and file checks. Continuous native-rate readability and in-game response remain unverified. The run closed after three trials. Final creative selection belongs to Fangfang.",
+      "scope": "Test a more distinct upper blade facet and narrow bevel in R04 drawings 5 and 6 with the original tip and guard fixed. Separately test the interrupted upper thigh and tack in frame 6.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T16:09:23.384Z",
+        "decision": "REVIEW_COMPLETE",
+        "summary": "At matched native scale, the F5/F6 blade is grayer and reads as the same slender saber, with no clear new face direction. Enlarged crops support a modest bevel/face shading change with an apparent second tone, but under the same outline it's ambiguous whether the blade rolls upward or the light moves across the same plane. In F6 the pronounced horizontal cut through the upper thigh is substantially reduced; the tail across to the red caparison retains its stepped seam.",
+        "gains": [
+          "F6 upper thigh plate reads as one rounded surface in the candidate. The bright plane and over-edge shadow continue through the horizontal break visible in both R04 and the cue control. Adjacent dark tack reads less interrupted near the thigh; this is a small local change.",
+          "The candidate and cue control share the same blade treatment in both F5/F6. At enlargement the diffuse steel face and thinner inner streak are easier to distinguish as tones, though direction stays ambiguous.",
+          "It remains one continuous slender saber from glove through gold guard to tip in both rearward poses. The full alpha mask is byte-identical to R04 for all eight cells, including hooves. Outside the blade-only regions in F5/F6 and the local F6 thigh/tack patch, artwork is unchanged."
+        ],
+        "remaining": [
+          "F5/F6 bevel shading is weaker than a reliably upward-facing plane at matched scale. More zoom reveals changes to highlight placement without resolving the ambiguity. No blade width inflation or visible gap was found.",
+          "F6 tail/caparison still has a conspicuous horizontal shear in hair highlights and where the fabric top contour meets the tail. Candidate and R04 pixels agree over that region.",
+          "The PNG evidence supports static observations and native encoded timing. Continuous perceptual playback, exact in-game canvas/scale and player response remain unobserved."
+        ],
+        "inspection": "Visually inspected matched F1–F8 still sheets, supplied enlarged blade and F6 seam details, and supplied matched cue-control image. Also compared equal-matte F5/F6 full subject crops at 1 source pixel per pixel and targeted nearest-neighbor 3×/4× details extracted from the exact sheets. Viewed the exact 1536×1024 raw PNG. It has a triptych with two blade/hilt/arm views and a central rider/thigh/tack crop, with a conspicuous brighter face/darker band treatment and continuous grip/guard in each blade view. It is separate evidence, not a native candidate animation or a demonstration that the stronger raw appearance transfers. Read APNG frame timestamps via ffprobe and decoded all eight APNG frames and durations via Pillow. Viewed those decoded base/candidate pose pairs as stills. No continuous playback watched, and no gameplay capture, game, editor, build or test run. Encode geometry 884×460, looping; start milliseconds [0,180,320,460,550,640,780,940], holds [180,140,140,90,90,140,160,350] total 1290 ms; all follow the native Godot region track. Compared each 1024×768 native RGBA cell. F1–F4 and F7–F8 identical to base. F5 has 338 RGB-only changed pixels in half-open bounds x432–494/y330–347; candidate equals the cue control. F6 has 293 RGB-only blade changes x446–504/y360–374, shared with cue control, and 871 RGB-only additional thigh/tack changes x543–601/y370–395. All alpha values are unchanged for all cells. The region [448,390,91,48] covering tail/cloth join is identical.",
+        "confidence": "High for decoded timing, pixel equality, retained narrow connected outline and unchanged tail/cloth defect; high for visible thigh continuity in the stills; moderate for the qualitative plane interpretation at review scale. No confidence claim for continuous or in-game read."
+      },
+      "human_feedback": "Creative acceptance pending.",
+      "playback_coverage": "Ultron independently reviewed matched stills and checked the encoded playback clock. See assessment for exact coverage.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original R04 atlas"
+        },
+        {
+          "path": "iteration-03/candidate.png",
+          "sha256": "e66241de86a61eb709520216d63b1265eab2211070ca84c62ac8d4a0f0c177d5",
+          "role": "Registered trial atlas"
+        },
+        {
+          "path": "iteration-03/imagegen-return.png",
+          "sha256": "eda61c3c0035b9858e68472cefa27d5991d7df4b9a54be6d86409e310ab50f54",
+          "role": "Exact ImageGen return"
+        },
+        {
+          "path": "iteration-03/matched-frames-1-4.png",
+          "sha256": "39122ded6e4f5d524d2002a880252afaf03c976acb2c1f6f97a5967d55658940",
+          "role": "Fixed comparison · drawings 1–4"
+        },
+        {
+          "path": "iteration-03/matched-frames-5-8.png",
+          "sha256": "8c3f62f925bb80c29038c2508e491dded438d7b3d15960ee4438877bb295d22f",
+          "role": "Fixed comparison · drawings 5–8"
+        },
+        {
+          "path": "iteration-03/matched-blade-detail.png",
+          "sha256": "2851716c6f8df502c1cb95c1582491d76dc61239647c0d5abc1cc6a8268a364c",
+          "role": "Matched blade detail"
+        },
+        {
+          "path": "iteration-03/matched-playback.png",
+          "sha256": "885b20c14af09fe321fe8fffec39641c1137d4ebf0592fbc15783a919c6b3c2a",
+          "role": "Paired native-clock browser playback"
+        },
+        {
+          "path": "iteration-03/cue-only.png",
+          "sha256": "cb06f1d734dad2be38448592c990b4839fde1e537ca05bd768efb722f528e008",
+          "role": "Saber study with original seam pixels"
+        },
+        {
+          "path": "iteration-03/matched-cue-control.png",
+          "sha256": "de4875f2a88d802e159a6d57458d191d8c28bd0745fc412f4e8e2fa3f5f129c9",
+          "role": "Saber cue comparison with seam held fixed"
+        },
+        {
+          "path": "iteration-03/matched-seam-detail.png",
+          "sha256": "e62b0ffe567752ddc2b41a809779dac43618d875f9fa37f2b3d0f98d1cf150a3",
+          "role": "Matched frame-6 seam detail"
+        }
+      ],
+      "config": {
+        "path": "iteration-03/config.json",
+        "sha256": "a9746623f54f9ec4d659542c4dcc8c7c26f8be738ec4c70c8465d22515c9f7b4"
+      },
+      "review_annotations": {
+        "path": "iteration-03/review-annotations.json",
+        "sha256": "f0c49b3a64ab73271c1512e589495c85f9adecb6efd22521361beb0791c08786"
+      },
+      "role_trace": {
+        "path": "iteration-03/role-trace.json",
+        "sha256": "a3815f86ef81bcd8fb341d3d4f5b35cb0e274f5c7484e5a85af9235e7d5de1c9"
+      },
+      "focus_time": 0.55
+    }
+  ]
+}

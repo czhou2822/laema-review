@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "default_run": "RETURN-BACKHAND-BASE-01",
+  "captured_at": "2026-11-18T16:12:31.532831+00:00",
+  "collection_events": [
+    {
+      "label": "Trial 1 image received",
+      "status": "finished",
+      "at": "2026-11-18T15:26:53.637Z",
+      "note": "The raw return and assembled candidate both remain reviewable."
+    },
+    {
+      "label": "Trial 2 image received",
+      "status": "finished",
+      "at": "2026-11-18T15:42:42.979Z",
+      "note": "Original-only input. Raw return and trial art preserved."
+    },
+    {
+      "label": "Trial 3 image received",
+      "status": "finished",
+      "at": "2026-11-18T15:59:10.950Z",
+      "note": "Original-only input. Raw return and trial art preserved."
+    },
+    {
+      "label": "Independent assessment completed for all three trials",
+      "status": "finished",
+      "at": "2026-11-18T16:09:23.384Z",
+      "note": "Each trial kept its own raw image, candidate and initial findings. Three-call budget used."
+    }
+  ],
+  "attacks": [
+    {
+      "id": "return_backhand_base_three",
+      "label": "Return Backhand · Trials from R04",
+      "started_at": "2026-11-18T15:26:07.135Z",
+      "attempts": [
+        {
+          "phase": 1,
+          "number": 1,
+          "run_id": "RETURN-BACKHAND-BASE-01",
+          "display_title": "Trial 1 · Blade-plane shading",
+          "availability": "playback",
+          "events": [
+            {
+              "label": "ImageGen call submitted",
+              "status": "started",
+              "at": "2026-11-18T15:26:07.135Z"
+            },
+            {
+              "label": "Exact image returned",
+              "status": "finished",
+              "at": "2026-11-18T15:26:53.637Z"
+            },
+            {
+              "label": "Independent initial assessment recorded",
+              "status": "finished",
+              "at": "2026-11-18T15:36:18Z"
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "number": 2,
+          "run_id": "RETURN-BACKHAND-BASE-02",
+          "display_title": "Trial 2 · Blade, grip and frame-6 join",
+          "availability": "playback",
+          "events": [
+            {
+              "label": "ImageGen call submitted",
+              "status": "started",
+              "at": "2026-11-18T15:42:00.665Z"
+            },
+            {
+              "label": "Exact image returned",
+              "status": "finished",
+              "at": "2026-11-18T15:42:42.979Z"
+            },
+            {
+              "label": "Independent initial assessment recorded",
+              "status": "finished",
+              "at": "2026-11-18T15:52:26.752888+00:00"
+            }
+          ]
+        },
+        {
+          "phase": 1,
+          "number": 3,
+          "run_id": "RETURN-BACKHAND-BASE-03",
+          "display_title": "Trial 3 · Blade facets and upper frame-6 join",
+          "availability": "playback",
+          "events": [
+            {
+              "label": "ImageGen call submitted",
+              "status": "started",
+              "at": "2026-11-18T15:58:23.019Z"
+            },
+            {
+              "label": "Exact image returned",
+              "status": "finished",
+              "at": "2026-11-18T15:59:10.950Z"
+            },
+            {
+              "label": "Independent initial assessment recorded",
+              "status": "finished",
+              "at": "2026-11-18T16:09:23.384Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

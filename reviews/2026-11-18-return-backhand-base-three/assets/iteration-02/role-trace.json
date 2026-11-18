@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-BASE-02",
+  "iterations": [
+    {
+      "id": "RETURN-BACKHAND-BASE-02",
+      "label": "Trial 2 · Blade, grip and frame-6 join",
+      "candidate_sha256": "7d94b54747b4af6e59ac6c7436676ae3205689ef50f276cdb89bf648f537fcab",
+      "status": "Review complete · creative acceptance pending",
+      "events": [
+        {
+          "kind": "edith_to_ume",
+          "actor": "Edith",
+          "recipient": "Ume",
+          "recorded_at": "2026-11-18T15:38:45.740020+00:00",
+          "status": "Recorded",
+          "artifact": {
+            "path": "edith-brief.txt",
+            "sha256": "f1edbb0a712d468cc872aba668973cf79146e080d90759baca6718b807ab48a8"
+          }
+        },
+        {
+          "kind": "ume_to_engine",
+          "actor": "Ume",
+          "recipient": "ImageGen",
+          "recorded_at": "2026-11-18T15:42:00.665Z",
+          "status": "Recorded",
+          "artifact": {
+            "path": "prompt.txt",
+            "sha256": "7ef4a2c39c7e6d1b55c1e7d60ceab22688317b0d09531e2715588fb538b14001"
+          }
+        },
+        {
+          "kind": "ultron_assessment",
+          "actor": "Ultron",
+          "recipient": "Edith",
+          "recorded_at": "2026-11-18T15:52:26.752888+00:00",
+          "status": "Recorded",
+          "artifact": {
+            "path": "ultron-initial.json",
+            "sha256": "6e9ffc826706401da7413d8ec87ac7ec10f8022cc513c7b51a16907a378776cb"
+          }
+        },
+        {
+          "kind": "ultron_to_edith",
+          "actor": "Ultron",
+          "recipient": "Edith",
+          "recorded_at": "2026-11-18T15:52:26.752888+00:00",
+          "status": "Recorded",
+          "artifact": {
+            "path": "ultron-initial.json",
+            "sha256": "6e9ffc826706401da7413d8ec87ac7ec10f8022cc513c7b51a16907a378776cb"
+          }
+        },
+        {
+          "kind": "edith_interpretation",
+          "actor": "Edith",
+          "recipient": "Review record",
+          "recorded_at": "2026-11-18T15:55:07.419937+00:00",
+          "status": "Recorded",
+          "artifact": {
+            "path": "edith-interpretation.md",
+            "sha256": "84a103d68d802d3de00995ab92388f06f122b80579c556b7f39b16ed6677f39a"
+          }
+        },
+        {
+          "kind": "coordination",
+          "actor": "Jarvis",
+          "recipient": "Review record",
+          "recorded_at": "2026-11-18T15:42:42.979Z",
+          "status": "Recorded",
+          "artifact": {
+            "path": "provenance.json",
+            "sha256": "ae945b8928c3e81c865ab2a71b049e78abfb761d2f4ffe652bcf477c7fecff08"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-BASE-03",
+  "candidate_sha256": "e66241de86a61eb709520216d63b1265eab2211070ca84c62ac8d4a0f0c177d5",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T16:09:23.384Z",
+  "provenance": "Regions from the independent initial assessment of the exact candidate.",
+  "issues": [
+    {
+      "id": "BACKHAND-BLADE-PLANE-F5",
+      "frame": 5,
+      "label": "Upward-facing saber plane remains ambiguous",
+      "reason": "At native and matched review size the changed steel looks softer and grayer; enlarged images reveal a lighter internal streak beneath a comparatively dark shoulder at midblade, while the outside edge, outline, hilt and taper stay fixed. This differentiates tones without an unambiguous upward-facing plane. A reader should be able to recover the intended face direction from the native frame.",
+      "severity": "Major",
+      "confidence": "Moderate to high for the matched stills",
+      "evidence_status": "Established shading difference; direction unverified",
+      "state": "open",
+      "region": [
+        423,
+        322,
+        116,
+        36
+      ]
+    },
+    {
+      "id": "BACKHAND-BLADE-PLANE-F6",
+      "frame": 6,
+      "label": "Second rearward frame still reads as the same blade face",
+      "reason": "F6 also trades the bright original ridge for a muted top and a lighter inner band with a dark lower strip. Under the same curvature and outline, the evidence can read as a relit blade. It has a clear connected and slim silhouette, but no convincing upward roll in the matched stills.",
+      "severity": "Major",
+      "confidence": "Moderate to high for the matched stills",
+      "evidence_status": "Established shading difference; direction unverified",
+      "state": "open",
+      "region": [
+        442,
+        346,
+        95,
+        32
+      ]
+    },
+    {
+      "id": "BACKHAND-F6-TAIL-CLOTH",
+      "frame": 6,
+      "label": "Tail and red cloth still meet across a horizontal break",
+      "reason": "At native scale and in the seam closeup, the dark hair alignment and red cloth top still meet across a hard horizontal step. The local F6 plate changes are forward of this seam, whose regions match R04 exactly. A continuous-looking overlap remains unresolved.",
+      "severity": "Minor",
+      "confidence": "High",
+      "evidence_status": "Established",
+      "state": "open",
+      "region": [
+        448,
+        390,
+        91,
+        48
+      ]
+    }
+  ],
+  "improvements": [
+    {
+      "id": "BACKHAND-F6-THIGH-TACK-GAIN",
+      "region": [
+        543,
+        370,
+        58,
+        25
+      ],
+      "frame": 6,
+      "label": "Upper thigh surface is more continuous",
+      "reason": "The horizontal cut across the upper thigh is substantially less visible, especially where its bright midline now passes from above to below the old step. Nearby dark tack transitions more coherently along the thigh. The jacket/cloth and tail are separate.",
+      "confidence": "Recorded matched-still observation",
+      "sourceObservationId": "BACKHAND-F6-THIGH-TACK-GAIN"
+    },
+    {
+      "id": "BACKHAND-F5-SABER-OUTLINE-RETAINED",
+      "region": [
+        423,
+        322,
+        116,
+        36
+      ],
+      "frame": 5,
+      "label": "Slender continuous saber retained",
+      "reason": "The changed internal tones remain within the original alpha. The narrow taper, guard and grasp stay visually attached without a duplicate edge.",
+      "confidence": "Recorded matched-still observation",
+      "sourceObservationId": "BACKHAND-F5-SABER-OUTLINE-RETAINED"
+    },
+    {
+      "id": "BACKHAND-F6-SABER-OUTLINE-RETAINED",
+      "region": [
+        442,
+        346,
+        95,
+        32
+      ],
+      "frame": 6,
+      "label": "Grip and rearward blade stay connected",
+      "reason": "Glove, guard and blade read as a single weapon; the alpha is identical to R04.",
+      "confidence": "Recorded matched-still observation",
+      "sourceObservationId": "BACKHAND-F6-SABER-OUTLINE-RETAINED"
+    }
+  ]
+}

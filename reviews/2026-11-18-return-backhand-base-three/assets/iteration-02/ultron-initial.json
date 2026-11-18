@@ -1,0 +1,80 @@
+{
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T15:52:26.752888+00:00",
+  "decision": "REVIEW_COMPLETE",
+  "summary": "The candidate keeps the slender, attached saber through the rearward active poses. Its gentler facet contrast is discernible in enlarged stills but yields no dependable new impression that the blade turns upward. Independently, frame 6 removes the conspicuous straight break through the tail/cloth join while a horizontal discontinuity remains through the rider's thigh and adjacent tack. Mounted silhouette, hooves and preview clock are preserved.",
+  "gains": [
+    "Frame 6, 640 ms: the upper sweep of tail strands meets the lower tail more continuously and the red cloth no longer starts against the obvious horizontal cut seen in R04 and the cue-only control. The repair leaves a slight local interpolation softness.",
+    "F5/F6: the same narrow projected saber silhouette and reach are retained. The continuous route from black glove through gold guard and silver steel to the tip is visible in both active frames, including F6.",
+    "The mounted silhouette and floor placement remain intact. Frames 1–4 and 7–8 are pixel-identical to R04, and the F5/F6 changes lie above the hooves. The paired APNG encodes all eight native poses and the 1,290 ms clock."
+  ],
+  "remaining": [
+    "The new hue/value rolloff inside the silver band is subtle. It does not produce a confidently distinct top plane at the supplied matched full-pose scale, and stills cannot resolve its readability at native speed.",
+    "The horizontal frame-6 thigh/adjacent tack seam is still visible in matching magnified crops. In particular the armor highlight and nearby diagonal strap visibly jump at the join even after the tail/cloth repair.",
+    "Motion at continuous native rate, gameplay feel, and final creative acceptance remain unverified."
+  ],
+  "inspection": "Visually compared supplied original and current candidate through matched stills 1–4 and 5–8, blade and F6 seam details, original-seam cue control, native-cell crops and a same-scale contact sheet of all eight decoded APNG images. Decoded frame durations 180/140/140/90/90/140/160/350 ms, matching the current source key times and 1,290 ms length; the APNG is looping, whereas the authored game action is non-looping. I inspected all decoded timed pictures as stills; I did not watch continuous real-time playback. Verified original and candidate SHA-256 and made exact per-frame RGBA comparisons. Candidate changes F5 [432,328,102,27] and F6 [446,342,93,69]. F5 has zero alpha differences. F6 alpha differences are confined to [450,387,25,24] below the blade. The cue-only F6 atlas differs from the candidate only in the tail/cloth patch [450,386,80,25]; F5 cue-only and candidate are identical. Inspected the exact raw imagegen return as a separate image: it has strong background haze, paired partial figures cropping out the legs, and small floating forms near the heads. Those features are absent in the evaluated full candidate as viewed on the common matte. No Godot, game, editor, test or build was run.",
+  "confidence": "High on exact preserved projected blade contour, lever connection, hoof registration, source/preview timing, localized tail improvement and remaining thigh/tack join. Moderate on failure of the design-facing cue under the supplied rendered conditions, since the facing cue is a perceptual claim and I only saw stills.",
+  "findings": [
+    {
+      "id": "RB-BLADE-PLANE",
+      "frame": 6,
+      "label": "Upward-facing blade plane remains ambiguous",
+      "reason": "At F5 and F6 the candidate preserves the same silhouette and mainly changes a thin hue/contrast gradient toward the guard and inside the bright strip. The large white band and darker lower boundary read much like R04 at matched scale. A clear read would distinguish a top plane across the active rearward cut in matched views while holding this width and grasp. Confirmation in watched native timing is still needed.",
+      "severity": "Major",
+      "evidence_status": "Established at matched still scale; perceptual result at continuous rate unverified",
+      "state": "open",
+      "confidence": "moderate",
+      "region": [
+        441,
+        342,
+        75,
+        35
+      ]
+    },
+    {
+      "id": "RB-F6-THIGH-REIN-SEAM",
+      "frame": 6,
+      "label": "Thigh highlight and adjacent tack still meet at a horizontal step",
+      "reason": "The magnified F6 comparison shows an abrupt horizontal interruption beneath the waist across the armored thigh into adjacent tackle/diagonal strap. The candidate changes stop left of that break. The more visible upper rein reads through to its bit; the issue is the nearby strap/join and interrupted armor shading, separate from the improved tail or blade continuity. Observable repair is continuous local armor and strap paths without disturbing their surrounding pose.",
+      "severity": "Minor",
+      "evidence_status": "Established",
+      "state": "open",
+      "confidence": "high",
+      "region": [
+        532,
+        369,
+        104,
+        28
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "id": "RB-F6-TAIL-CLOTH",
+      "frame": 6,
+      "label": "Tail/cloth continuity improved",
+      "region": [
+        449,
+        383,
+        83,
+        31
+      ]
+    },
+    {
+      "id": "RB-F6-CONNECTED-LEVER",
+      "frame": 6,
+      "label": "Slender connected blade, guard and glove retained",
+      "region": [
+        440,
+        344,
+        100,
+        32
+      ]
+    }
+  ],
+  "goal_outcome": "Partial gain. The upward-facing plane remains unproven in the matched full-pose images. The frame-6 tail and cloth join improves.",
+  "base_sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+  "candidate_sha256": "7d94b54747b4af6e59ac6c7436676ae3205689ef50f276cdb89bf648f537fcab",
+  "independence": "I received the neutral goal, pinned Ultron instructions, original and current neutral media only. Canonical Laema documentation used for source consultation incidentally mentioned in generic terms that the baseline native attachment followed partial favorable feedback. I saw no actual vote, comment, creator instructions or rationale, prior candidate or verdict, or other role's materials and did not use the generic feedback for the judgment."
+}

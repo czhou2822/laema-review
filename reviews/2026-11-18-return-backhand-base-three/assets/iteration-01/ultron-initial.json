@@ -1,0 +1,91 @@
+{
+  "reviewer": "Ultron",
+  "trial": 1,
+  "reviewed_at": "2026-11-18T15:36:18Z",
+  "decision": "REVIEW_COMPLETE",
+  "summary": "Trial 1 makes the upper light band on the saber easier to distinguish from its darker underside in the two active drawings. I can see the tonal separation in close-up and a restrained change in the 1:1 comparison. The intended upward-facing plane still does not read reliably as a distinct orientation in my native-size still comparison. The outline, slender projected width and connection to the guard stay intact. A pre-existing drawing 6 discontinuity through the horse's tail, tack and rider is carried over unchanged.",
+  "gains": [
+    "At close-up the candidate shifts emphasis to the upper highlight and darkens the lower band in drawings 5 and 6, making the subtle top-versus-underside distinction sharper.",
+    "At 1:1 the saber stays slender and connected to its guard in both active drawings. Its tip, outer silhouette and hilt did not shift. The mounted identity, hoof placement, body registration and eight drawing positions are preserved from R04.",
+    "The artifact preview encodes the same eight holds as the current native resource, totaling 1.290 seconds."
+  ],
+  "remaining": [
+    "An upward-facing plane remains an equivocal reading at 1:1 in drawings 5 and 6. The dominant cue is still a narrow blade with different lighting.",
+    "Drawing 6 carries the base's horizontal joins through the tail and saddle area and through the rider's thigh and nearby reins.",
+    "The APNG was inspected as a still and decoded for timing. A watched synchronized clip or gameplay capture would be needed to establish how the cue reads in motion."
+  ],
+  "inspection": "Compared the original R04 and assembled trial across drawings 1–8 using the matched full-pose still sheets, unresampled 1:1 still crops of the active drawings, and the blade detail close-ups. Inspected the actual image-generation return as a separate visual artifact. The generated return contains dark surround and stray bright fragments near the helmet, which do not appear in the assembled candidate. The APNG image viewer displayed the initial still only. Independently decoded all eight APNG frame durations, but did not watch continuously timed motion. Source timing and encoded holds agree. Camera, encounter scale, transitions from/to idle in gameplay, in-motion telegraph readability, collision and player feel are unobserved.",
+  "confidence": "High for visual still comparison, alpha/silhouette preservation and encoded timing. Medium for the inferred orientation ambiguity at 1:1. No motion or in-game confidence is assigned.",
+  "findings": [
+    {
+      "id": "blade-plane-frame-5",
+      "frame": 5,
+      "frame_start_ms": 550,
+      "label": "Upward blade face remains ambiguous at the first active drawing",
+      "reason": "At 1:1 the mostly horizontal curved saber reads clearly as the same narrow saber with a somewhat stronger upper highlight. At close-up, the white strip is easier to distinguish from a darker lower facet, but the perceived change in plane is too small to establish the target on the native-size still. Hilt-to-blade contact and projected width are preserved.",
+      "severity": "Major",
+      "status": "open",
+      "evidence_status": "Established for the still judgment",
+      "confidence": "Medium",
+      "region": [
+        427,
+        326,
+        82,
+        29
+      ],
+      "observable_condition": "An independent matched native-size comparison can recognize the upward-facing surface at the first active pose without relying on magnification, while the weapon remains slender and visually continuous."
+    },
+    {
+      "id": "blade-plane-frame-6",
+      "frame": 6,
+      "frame_start_ms": 640,
+      "label": "Second active drawing does not resolve blade facing",
+      "reason": "The close-up shows a clean bright strip above a stronger dark strip, but at 1:1 this mostly reads as a contrast adjustment on the same rearward curved silhouette. The blade still appears contiguous with its guard, and there is no new width or registration defect in the blade.",
+      "severity": "Major",
+      "status": "open",
+      "evidence_status": "Established for the still judgment",
+      "confidence": "Medium",
+      "region": [
+        439,
+        351,
+        93,
+        29
+      ],
+      "observable_condition": "The same upward-facing interpretation remains apparent when the rearward blade lowers into drawing 6. A watched matched clip is needed to assess whether it reads through the transition."
+    },
+    {
+      "id": "inherited-mount-seam-frame-6",
+      "frame": 6,
+      "frame_start_ms": 640,
+      "label": "Existing horizontal mount and rider seams are still visible",
+      "reason": "Frame 6 has stepped horizontal joins through the horse's tail and saddle cloth and through the rider's upper leg and reins. These are visible in the matched whole-pose still and unmistakable in the 3× crop. The regions are pixel-identical between R04 and Trial 1, and there is no introduced hoof or body offset.",
+      "severity": "Minor",
+      "status": "open",
+      "evidence_status": "Established, inherited",
+      "confidence": "High",
+      "region": [
+        451,
+        371,
+        190,
+        43
+      ],
+      "observable_condition": "If addressed within an authorized iteration, the tail, cloth, thigh and reins read continuously at the join and keep the same registered pose."
+    }
+  ],
+  "basis": {
+    "goal": "Improve native readability of the upward-facing rearward saber plane from mounted Black Knight R04, preserving slender width, guard continuity, mounted identity, registration, all eight poses and timing.",
+    "baseline_sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+    "packet_sha256": {
+      "candidate.png": "46584a348ee02698d81b3a9c94c23d6b8a53f96e0e73d1362ca764186b63ee37",
+      "imagegen-return.png": "c413627e292c8876c212e1c978cc704638171838c9be1ab6cd8c8cc1cc67ae77",
+      "matched-frames-1-4.png": "e5f9c6938a7d05454bf3078b129be81b0cfb050361c8a2a41d41b25e5728b14c",
+      "matched-frames-5-8.png": "4bc24bd9feb5ada4245c5f2073a00019a2f23640efa7c8db689b0d3529ef16fa",
+      "matched-blade-detail.png": "e022eea372dc51ca0604aea9a615f9d1ed370d5f514a94369d0e0b75fdb3351f",
+      "matched-playback.png": "4d200df0f7bdab1d8a6166040e72f018393ff0e87a1b71287b97a7481c83c8ab"
+    },
+    "regions": "Coordinates are [x,y,width,height] relative to each unscaled 1024×768 source cell, with origin at upper left.",
+    "mechanical_check": "Decoded RGBA comparison differed in 336 pixels over x432–493/y330–346 in drawing 5 and 293 pixels over x446–503/y360–373 in drawing 6. Alpha is byte-identical across all eight cells. Drawings 1–4 and 7–8 are byte-identical at the decoded pixel level. Timing metadata holds are 180/140/140/90/90/140/160/350 ms, matching native source timing.",
+    "judgment_scope": "Independent artifact review complete with open findings. This review does not establish full goal satisfaction, runtime behavior, attachment approval or final creative acceptance."
+  },
+  "exposure": "Only the shared task goal, original book, neutral versioned current gameplay context, actual trial artifacts and R04 base were consulted. No Ume process or defense, prior candidate findings, annotations, vote details, or prior candidate artifacts were accessed. The current authoritative GDD's generic statement about partial attachment feedback was visible and was treated solely as installation context."
+}

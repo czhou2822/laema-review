@@ -1,0 +1,117 @@
+{
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T16:09:23.384Z",
+  "decision": "REVIEW_COMPLETE",
+  "summary": "At matched native scale, the F5/F6 blade is grayer and reads as the same slender saber, with no clear new face direction. Enlarged crops support a modest bevel/face shading change with an apparent second tone, but under the same outline it's ambiguous whether the blade rolls upward or the light moves across the same plane. In F6 the pronounced horizontal cut through the upper thigh is substantially reduced; the tail across to the red caparison retains its stepped seam.",
+  "gains": [
+    "F6 upper thigh plate reads as one rounded surface in the candidate. The bright plane and over-edge shadow continue through the horizontal break visible in both R04 and the cue control. Adjacent dark tack reads less interrupted near the thigh; this is a small local change.",
+    "The candidate and cue control share the same blade treatment in both F5/F6. At enlargement the diffuse steel face and thinner inner streak are easier to distinguish as tones, though direction stays ambiguous.",
+    "It remains one continuous slender saber from glove through gold guard to tip in both rearward poses. The full alpha mask is byte-identical to R04 for all eight cells, including hooves. Outside the blade-only regions in F5/F6 and the local F6 thigh/tack patch, artwork is unchanged."
+  ],
+  "remaining": [
+    "F5/F6 bevel shading is weaker than a reliably upward-facing plane at matched scale. More zoom reveals changes to highlight placement without resolving the ambiguity. No blade width inflation or visible gap was found.",
+    "F6 tail/caparison still has a conspicuous horizontal shear in hair highlights and where the fabric top contour meets the tail. Candidate and R04 pixels agree over that region.",
+    "The PNG evidence supports static observations and native encoded timing. Continuous perceptual playback, exact in-game canvas/scale and player response remain unobserved."
+  ],
+  "inspection": "Visually inspected matched F1–F8 still sheets, supplied enlarged blade and F6 seam details, and supplied matched cue-control image. Also compared equal-matte F5/F6 full subject crops at 1 source pixel per pixel and targeted nearest-neighbor 3×/4× details extracted from the exact sheets. Viewed the exact 1536×1024 raw PNG. It has a triptych with two blade/hilt/arm views and a central rider/thigh/tack crop, with a conspicuous brighter face/darker band treatment and continuous grip/guard in each blade view. It is separate evidence, not a native candidate animation or a demonstration that the stronger raw appearance transfers. Read APNG frame timestamps via ffprobe and decoded all eight APNG frames and durations via Pillow. Viewed those decoded base/candidate pose pairs as stills. No continuous playback watched, and no gameplay capture, game, editor, build or test run. Encode geometry 884×460, looping; start milliseconds [0,180,320,460,550,640,780,940], holds [180,140,140,90,90,140,160,350] total 1290 ms; all follow the native Godot region track. Compared each 1024×768 native RGBA cell. F1–F4 and F7–F8 identical to base. F5 has 338 RGB-only changed pixels in half-open bounds x432–494/y330–347; candidate equals the cue control. F6 has 293 RGB-only blade changes x446–504/y360–374, shared with cue control, and 871 RGB-only additional thigh/tack changes x543–601/y370–395. All alpha values are unchanged for all cells. The region [448,390,91,48] covering tail/cloth join is identical.",
+  "confidence": "High for decoded timing, pixel equality, retained narrow connected outline and unchanged tail/cloth defect; high for visible thigh continuity in the stills; moderate for the qualitative plane interpretation at review scale. No confidence claim for continuous or in-game read.",
+  "findings": [
+    {
+      "id": "BACKHAND-BLADE-PLANE-F5",
+      "frame": 5,
+      "label": "Upward-facing saber plane remains ambiguous",
+      "reason": "At native and matched review size the changed steel looks softer and grayer; enlarged images reveal a lighter internal streak beneath a comparatively dark shoulder at midblade, while the outside edge, outline, hilt and taper stay fixed. This differentiates tones without an unambiguous upward-facing plane. A reader should be able to recover the intended face direction from the native frame.",
+      "severity": "Major",
+      "confidence": "Moderate to high for the matched stills",
+      "evidence_status": "Established shading difference; direction unverified",
+      "state": "open",
+      "region": [
+        423,
+        322,
+        116,
+        36
+      ]
+    },
+    {
+      "id": "BACKHAND-BLADE-PLANE-F6",
+      "frame": 6,
+      "label": "Second rearward frame still reads as the same blade face",
+      "reason": "F6 also trades the bright original ridge for a muted top and a lighter inner band with a dark lower strip. Under the same curvature and outline, the evidence can read as a relit blade. It has a clear connected and slim silhouette, but no convincing upward roll in the matched stills.",
+      "severity": "Major",
+      "confidence": "Moderate to high for the matched stills",
+      "evidence_status": "Established shading difference; direction unverified",
+      "state": "open",
+      "region": [
+        442,
+        346,
+        95,
+        32
+      ]
+    },
+    {
+      "id": "BACKHAND-F6-TAIL-CLOTH",
+      "frame": 6,
+      "label": "Tail and red cloth still meet across a horizontal break",
+      "reason": "At native scale and in the seam closeup, the dark hair alignment and red cloth top still meet across a hard horizontal step. The local F6 plate changes are forward of this seam, whose regions match R04 exactly. A continuous-looking overlap remains unresolved.",
+      "severity": "Minor",
+      "confidence": "High",
+      "evidence_status": "Established",
+      "state": "open",
+      "region": [
+        448,
+        390,
+        91,
+        48
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "id": "BACKHAND-F6-THIGH-TACK-GAIN",
+      "frame": 6,
+      "label": "Upper thigh surface is more continuous",
+      "reason": "The horizontal cut across the upper thigh is substantially less visible, especially where its bright midline now passes from above to below the old step. Nearby dark tack transitions more coherently along the thigh. The jacket/cloth and tail are separate.",
+      "region": [
+        543,
+        370,
+        58,
+        25
+      ]
+    },
+    {
+      "id": "BACKHAND-F5-SABER-OUTLINE-RETAINED",
+      "frame": 5,
+      "label": "Slender continuous saber retained",
+      "reason": "The changed internal tones remain within the original alpha. The narrow taper, guard and grasp stay visually attached without a duplicate edge.",
+      "region": [
+        423,
+        322,
+        116,
+        36
+      ]
+    },
+    {
+      "id": "BACKHAND-F6-SABER-OUTLINE-RETAINED",
+      "frame": 6,
+      "label": "Grip and rearward blade stay connected",
+      "reason": "Glove, guard and blade read as a single weapon; the alpha is identical to R04.",
+      "region": [
+        442,
+        346,
+        95,
+        32
+      ]
+    }
+  ],
+  "goal_outcome": "The two rearward frames have a changed steel tonal treatment, but a clearly upward-facing saber plane is not established in the matched native and review-scale frames. The F6 thigh/adjacent tack continuity has a real local gain; the separate F6 tail/cloth seam remains. Width, visual connection, mounted identity, registration, the eight base poses and encoded native clock were preserved in this evidence.",
+  "independence": {
+    "scope": "Current trial compared solely with the designated original baselines and neutral task sources.",
+    "consulted_before_judgment": "Exact Fanor 0.3.9 checkout, original Steve Swink PDF passage, current Laema intent excerpts/native consumers, Jarvis neutral goal and identified media.",
+    "creator_narrative_exposure": false,
+    "other_role_records_exposure": false,
+    "prior_candidate_exposure": false,
+    "prior_reviews_or_votes_exposure": false,
+    "notes": "The supplied matched images label the current Trial 3 and original R04/cue-only control. I used these evidence labels and did not retrieve prior results or creator explanations."
+  },
+  "candidate_sha256": "e66241de86a61eb709520216d63b1265eab2211070ca84c62ac8d4a0f0c177d5"
+}

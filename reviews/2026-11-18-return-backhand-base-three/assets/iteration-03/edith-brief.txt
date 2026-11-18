@@ -1,0 +1,1 @@
+Test a more distinct upper blade facet and narrow bevel in R04 drawings 5 and 6 with the original tip and guard fixed. Separately test the interrupted upper thigh and tack in frame 6.

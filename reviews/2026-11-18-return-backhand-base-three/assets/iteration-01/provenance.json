@@ -1,0 +1,12 @@
+{
+  "tool": "Built-in ImageGen",
+  "request": "RB-BASE-01-IMAGEGEN-01",
+  "call_count": 1,
+  "submitted_at": "2026-11-18T15:26:07.135Z",
+  "returned_at": "2026-11-18T15:26:53.637Z",
+  "source": "Original R04 derived paired F5/F6 crop",
+  "source_sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+  "raw_sha256": "c413627e292c8876c212e1c978cc704638171838c9be1ab6cd8c8cc1cc67ae77",
+  "assembly": "Registered generated tonal samples within R04 blade steel only. Alpha and six other drawings are pixel-identical to R04.",
+  "evidence_limits": "No game, editor or watched continuous gameplay."
+}

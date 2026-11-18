@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-BASE-01",
+  "candidate_sha256": "46584a348ee02698d81b3a9c94c23d6b8a53f96e0e73d1362ca764186b63ee37",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T15:36:18Z",
+  "provenance": "Regions from the independent initial assessment of the exact candidate.",
+  "issues": [
+    {
+      "id": "blade-plane-frame-5",
+      "frame": 5,
+      "frame_start_ms": 550,
+      "label": "Upward blade face remains ambiguous at the first active drawing",
+      "reason": "At 1:1 the mostly horizontal curved saber reads clearly as the same narrow saber with a somewhat stronger upper highlight. At close-up, the white strip is easier to distinguish from a darker lower facet, but the perceived change in plane is too small to establish the target on the native-size still. Hilt-to-blade contact and projected width are preserved.",
+      "severity": "Major",
+      "status": "open",
+      "evidence_status": "Established for the still judgment",
+      "confidence": "Medium",
+      "region": [
+        427,
+        326,
+        82,
+        29
+      ],
+      "observable_condition": "An independent matched native-size comparison can recognize the upward-facing surface at the first active pose without relying on magnification, while the weapon remains slender and visually continuous."
+    },
+    {
+      "id": "blade-plane-frame-6",
+      "frame": 6,
+      "frame_start_ms": 640,
+      "label": "Second active drawing does not resolve blade facing",
+      "reason": "The close-up shows a clean bright strip above a stronger dark strip, but at 1:1 this mostly reads as a contrast adjustment on the same rearward curved silhouette. The blade still appears contiguous with its guard, and there is no new width or registration defect in the blade.",
+      "severity": "Major",
+      "status": "open",
+      "evidence_status": "Established for the still judgment",
+      "confidence": "Medium",
+      "region": [
+        439,
+        351,
+        93,
+        29
+      ],
+      "observable_condition": "The same upward-facing interpretation remains apparent when the rearward blade lowers into drawing 6. A watched matched clip is needed to assess whether it reads through the transition."
+    },
+    {
+      "id": "inherited-mount-seam-frame-6",
+      "frame": 6,
+      "frame_start_ms": 640,
+      "label": "Existing horizontal mount and rider seams are still visible",
+      "reason": "Frame 6 has stepped horizontal joins through the horse's tail and saddle cloth and through the rider's upper leg and reins. These are visible in the matched whole-pose still and unmistakable in the 3× crop. The regions are pixel-identical between R04 and Trial 1, and there is no introduced hoof or body offset.",
+      "severity": "Minor",
+      "status": "open",
+      "evidence_status": "Established, inherited",
+      "confidence": "High",
+      "region": [
+        451,
+        371,
+        190,
+        43
+      ],
+      "observable_condition": "If addressed within an authorized iteration, the tail, cloth, thigh and reins read continuously at the join and keep the same registered pose."
+    }
+  ],
+  "improvements": [
+    {
+      "id": "GAIN-BLADE-TONE-F5",
+      "frame": 5,
+      "region": [
+        427,
+        326,
+        82,
+        29
+      ],
+      "label": "Clearer upper and lower steel tones in close-up",
+      "reason": "At close-up the candidate shifts emphasis to the upper highlight and darkens the lower band in drawings 5 and 6, making the subtle top-versus-underside distinction sharper.",
+      "confidence": "Bounded close-up still observation",
+      "sourceObservationId": "Ultron recorded blade-tone observation"
+    },
+    {
+      "id": "GAIN-BLADE-TONE-F6",
+      "frame": 6,
+      "region": [
+        439,
+        351,
+        93,
+        29
+      ],
+      "label": "Clearer upper and lower steel tones in close-up",
+      "reason": "At close-up the candidate shifts emphasis to the upper highlight and darkens the lower band in drawings 5 and 6, making the subtle top-versus-underside distinction sharper.",
+      "confidence": "Bounded close-up still observation",
+      "sourceObservationId": "Ultron recorded blade-tone observation"
+    }
+  ]
+}

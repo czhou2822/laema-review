@@ -1,0 +1,13 @@
+{
+  "tool": "Built-in ImageGen",
+  "request": "RB-BASE-03-IMAGEGEN-01",
+  "call_count": 1,
+  "submitted_at": "2026-11-18T15:58:23.019Z",
+  "returned_at": "2026-11-18T15:59:10.950Z",
+  "source": "Only original R04 pixels supplied as the image-edit reference.",
+  "source_sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+  "raw_sha256": "eda61c3c0035b9858e68472cefa27d5991d7df4b9a54be6d86409e310ab50f54",
+  "assembled_sha256": "e66241de86a61eb709520216d63b1265eab2211070ca84c62ac8d4a0f0c177d5",
+  "mechanical_checks": {},
+  "evidence_limits": "The browser preview preserves the source clock. No game runtime was evaluated."
+}

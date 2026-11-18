@@ -1,0 +1,1 @@
+Test a coordinated plane across the saber, gold guard and cuff in R04 drawings 5 and 6 while holding blade width and outline fixed. Evaluate two bounded frame-6 seam patches separately.
