@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-FEEDBACK-02",
+  "candidate_sha256": "d8cd2f4c531fb8cfc3fceedf99b50069b82794c47d440ebfa8ec40524137b69c",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T08:13:06.467041+00:00",
+  "provenance": "Recorded independent static-artifact review. Regions are review notes, not painted artwork; motion remains for human review.",
+  "issues": [
+    {
+      "id": "RB-04-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        97.57000000000001,
+        177.4,
+        93.13499999999999
+      ],
+      "label": "Blade-face-up goal is not demonstrated",
+      "reason": "Backward poses and saber orientation closely resemble baseline; frame6 is a low leftward shallow arc. The still establishes a single connected saber, not which 3D blade face points upward. No material goal-directed change discernible in these poses.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-04-F6",
+      "frame": 6,
+      "region": [
+        22.175,
+        97.57000000000001,
+        177.4,
+        93.13499999999999
+      ],
+      "label": "Blade-face-up goal is not demonstrated",
+      "reason": "Backward poses and saber orientation closely resemble baseline; frame6 is a low leftward shallow arc. The still establishes a single connected saber, not which 3D blade face points upward. No material goal-directed change discernible in these poses.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    }
+  ],
+  "improvements": [
+    {
+      "id": "RB-01-F1",
+      "frame": 1,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F2",
+      "frame": 2,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F3",
+      "frame": 3,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F4",
+      "frame": 4,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F5",
+      "frame": 5,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F6",
+      "frame": 6,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F7",
+      "frame": 7,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "RB-01-F8",
+      "frame": 8,
+      "region": [
+        44.35,
+        13.305,
+        354.8,
+        394.71500000000003
+      ],
+      "label": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "reason": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-0"
+    },
+    {
+      "id": "GAIN-2-1-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        97.57000000000001,
+        177.4,
+        93.13499999999999
+      ],
+      "label": "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split.",
+      "reason": "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-1"
+    },
+    {
+      "id": "GAIN-2-1-F6",
+      "frame": 6,
+      "region": [
+        22.175,
+        97.57000000000001,
+        177.4,
+        93.13499999999999
+      ],
+      "label": "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split.",
+      "reason": "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-2-1"
+    }
+  ]
+}

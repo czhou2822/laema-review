@@ -1,0 +1,2 @@
+# Edith interpretation (pre-book verdict)
+Accept Ultron's final bounded review: no material blade-orientation gain versus04 is discernible, although the saber is connected and no frame6 split is confirmed. Stop at five actual calls. Keep01–05 and their original judgments; do not claim final05 wins. Face-up interpretation, native registration and timed action quality still need honest review. The separate book-context experiment cannot retrospectively label these image calls book-informed.

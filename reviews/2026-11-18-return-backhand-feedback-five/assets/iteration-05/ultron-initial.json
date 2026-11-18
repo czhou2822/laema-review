@@ -1,0 +1,46 @@
+{
+  "artifact_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+  "stage": "Pre-book independent current assessment before re-opening04/baseline. Retains prior reviews in memory. No books read.",
+  "evidence": "Eight alpha-composited stills only",
+  "observations": [
+    "Frames5\u20136 show a continuous slender curved saber, with narrow bright face and upward-curved tip.",
+    "Grip and guard connect to blade in6; no definite split.",
+    "The blade plane is not unambiguously facing upward from this sheet; visible bright face could also read as facing viewer.",
+    "Horse pose and mounted identity broadly consistent across sheet; exact contact registration not proven.",
+    "No complete-motion or timing claim."
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest saber, connected."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber, connected."
+    },
+    {
+      "frame": 3,
+      "observation": "Raised forward saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Backward saber with upturned tip and continuous guard, plane orientation uncertain."
+    },
+    {
+      "frame": 6,
+      "observation": "Low backward saber with upturned tip and continuous guard, plane orientation uncertain."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward recovery saber, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like saber recovery, connected."
+    }
+  ]
+}

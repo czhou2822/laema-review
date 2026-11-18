@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "feedback_api": "/api/run-feedback/return-backhand-feedback-five",
+  "iteration_review": true,
+  "default_run": "RETURN-BACKHAND-FEEDBACK-05",
+  "title": "Return Backhand · Five feedback iterations",
+  "runs": [
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-01",
+      "title": "Return Backhand · Connected blade study",
+      "selection_label": "Iteration 1 · Connected blade study",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-feedback-01",
+      "candidate_sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+      "gain_summary": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "remaining_summary": "Baseline rendering detail and silhouette are not preserved Horse silhouette changes rather than stays registered Timed action evidence absent",
+      "edith_user_facing_summary": "Accept Ultron's review: the connected backward saber is a useful local change, not whole-action acceptance. The gray RGB preview was misleading; alpha-composited evidence retracts that suspected defect. The output lost detail and changed armor/hoof silhouettes, so it is not a faithful replacement.\n\nNext bounded change: stop reducing the huge mostly-empty native atlas; use a compact original-reference sheet for generation to allocate more pixels to the mounted figure. Ask for the same eight keys, mounted identity and unchanged horse contacts, with wrist/blade corrections only. No timing/gameplay change. This is a generation input/framing adjustment, not manual repaint or inferred approval. The question of visible blade face remains stronger than merely an upward-curved tip.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T08:12:27.375731+00:00",
+        "decision": "Review complete; acceptance not established",
+        "summary": "Connected saber is visible; source-detail and registration concerns remain.",
+        "gains": [
+          "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view."
+        ],
+        "remaining": [
+          "Baseline rendering detail and silhouette are not preserved",
+          "Horse silhouette changes rather than stays registered",
+          "Timed action evidence absent"
+        ],
+        "inspection": "All eight static drawings inspected independently; no timed playback was watched by the reviewer. Display uses original native key times with fixed per-version crops. Generated atlas layout differs from source; this is not a registered native-asset replacement.",
+        "confidence": "Bounded static evidence, not gameplay feel."
+      },
+      "human_feedback": "No final user acceptance. Latest is not automatically best. All five outputs remain preserved.",
+      "scope": "Complete mounted Return Backhand; preserve identity, single connected saber, planted mount, and upward-facing blade during backward slash. Five-call cap reached. No gameplay or timing edits.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original atlas"
+        },
+        {
+          "path": "iteration-01/candidate.png",
+          "sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+          "role": "Actual generated candidate"
+        }
+      ],
+      "config": {
+        "path": "iteration-01/config.json",
+        "sha256": "f123267964478b716e82cd0eda769b707d69c97b6f9fa1999f423b76425cca1d"
+      },
+      "review_annotations": {
+        "path": "iteration-01/review-annotations.json",
+        "sha256": "131da2b3f78557cd196cbcf62909665975c42acfdcf325e9d31b57be8f150ab7"
+      },
+      "role_trace": {
+        "path": "iteration-01/role-trace.json",
+        "sha256": "0fc251c9d9bc5d078cad70b90939bd2833a1fcee5acfb20e3cdcb62d5a36ad77"
+      }
+    },
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-02",
+      "title": "Return Backhand · Detail restored",
+      "selection_label": "Iteration 2 · Detail restored",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-feedback-02",
+      "candidate_sha256": "d8cd2f4c531fb8cfc3fceedf99b50069b82794c47d440ebfa8ec40524137b69c",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+      "gain_summary": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness. Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split.",
+      "remaining_summary": "Blade-face-up goal is not demonstrated Motion and native registration not established",
+      "edith_user_facing_summary": "Accept Ultron: larger compact framing recovers crispness, but does not prove the user's requested blade-face correction. No invented frame6 split or hoof drift finding is needed. The unresolved point is visible wrist/blade-face orientation, not merely upward curvature of a saber tip.\n\nNext: use candidate02 as edit target, preserving its complete eight-pose layout and horse/body. Change only F5–6 wrist/forearm/blade articulation to show the silver face inclined upward during the backward slash. Keep an unmistakably single connected hilt/blade. Other poses and native timing remain constraints. A layout-adjusted sheet is review material, not a native registered atlas replacement.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T08:13:06.467041+00:00",
+        "decision": "Review complete; acceptance not established",
+        "summary": "Crisp source-like identity and connected sabers; no demonstrated substantive action change from baseline. Blade face-up criterion and motion remain unverified.",
+        "gains": [
+          "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness.",
+          "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split."
+        ],
+        "remaining": [
+          "Blade-face-up goal is not demonstrated",
+          "Motion and native registration not established"
+        ],
+        "inspection": "All eight static drawings inspected independently; no timed playback was watched by the reviewer. Display uses original native key times with fixed per-version crops. Generated atlas layout differs from source; this is not a registered native-asset replacement.",
+        "confidence": "Bounded static evidence, not gameplay feel."
+      },
+      "human_feedback": "No final user acceptance. Latest is not automatically best. All five outputs remain preserved.",
+      "scope": "Complete mounted Return Backhand; preserve identity, single connected saber, planted mount, and upward-facing blade during backward slash. Five-call cap reached. No gameplay or timing edits.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original atlas"
+        },
+        {
+          "path": "iteration-02/candidate.png",
+          "sha256": "d8cd2f4c531fb8cfc3fceedf99b50069b82794c47d440ebfa8ec40524137b69c",
+          "role": "Actual generated candidate"
+        }
+      ],
+      "config": {
+        "path": "iteration-02/config.json",
+        "sha256": "443c83463aa0c49fd135379b7f14048131eb3e4c250a5c5aaeeeec5b32b0fb81"
+      },
+      "review_annotations": {
+        "path": "iteration-02/review-annotations.json",
+        "sha256": "0e0302ee11a4bdd6aff82c0722f416a2a1254949b8be0f6a822e2495419fb64c"
+      },
+      "role_trace": {
+        "path": "iteration-02/role-trace.json",
+        "sha256": "ec49fb44a6b98f33c0a5deeb3656462d96dfdd915b94f559565140fdafa54f1c"
+      }
+    },
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-03",
+      "title": "Return Backhand · Blade-face study",
+      "selection_label": "Iteration 3 · Blade-face study",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-feedback-03",
+      "candidate_sha256": "3d81890516795653ab6f96448c731e8922d937014dcaae62d92bf7710f5ecd46",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+      "gain_summary": "A single connected, shaded blade face is plainly visible in both backward poses; no separated frame6 segment. Crisp armor and recognizable mounted identity remain; no clear new hoof drift visible.",
+      "remaining_summary": "Backward saber broadens substantially relative to other poses Upward blade face has stronger cues, not conclusive throughout sweep Motion/native registration unverified",
+      "edith_user_facing_summary": "Accept Ultron's bounded finding. F5–6 now visibly show a broad shaded face, but making the blade wider is not equivalent to rotating the same saber. The review correctly treats changed prop identity as a risk rather than established fact from stills.\n\nNext: preserve the face-up cue, reduce excessive breadth, and preserve one coherent saber's taper/curvature/length through F5–7 into F8. No speculative horse repaint. This is the fourth authorized image attempt, not a new attack design. Final motion/registration and Fangfang acceptance remain open.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T08:15:40.832196+00:00",
+        "decision": "Review complete; acceptance not established",
+        "summary": "Visible change now exists in backward blade faces, but blade width/shape consistency through recovery needs evidence. No split observed.",
+        "gains": [
+          "A single connected, shaded blade face is plainly visible in both backward poses; no separated frame6 segment.",
+          "Crisp armor and recognizable mounted identity remain; no clear new hoof drift visible."
+        ],
+        "remaining": [
+          "Backward saber broadens substantially relative to other poses",
+          "Upward blade face has stronger cues, not conclusive throughout sweep",
+          "Motion/native registration unverified"
+        ],
+        "inspection": "All eight static drawings inspected independently; no timed playback was watched by the reviewer. Display uses original native key times with fixed per-version crops. Generated atlas layout differs from source; this is not a registered native-asset replacement.",
+        "confidence": "Bounded static evidence, not gameplay feel."
+      },
+      "human_feedback": "No final user acceptance. Latest is not automatically best. All five outputs remain preserved.",
+      "scope": "Complete mounted Return Backhand; preserve identity, single connected saber, planted mount, and upward-facing blade during backward slash. Five-call cap reached. No gameplay or timing edits.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original atlas"
+        },
+        {
+          "path": "iteration-03/candidate.png",
+          "sha256": "3d81890516795653ab6f96448c731e8922d937014dcaae62d92bf7710f5ecd46",
+          "role": "Actual generated candidate"
+        }
+      ],
+      "config": {
+        "path": "iteration-03/config.json",
+        "sha256": "1a5e86e89367f185713ef2d97ee55051bbdddd47823bcba6d4c024d61511603f"
+      },
+      "review_annotations": {
+        "path": "iteration-03/review-annotations.json",
+        "sha256": "db340d61437fc8e960379dae0b1aed2ab3a080c1e187c9d432f4ad8a58b43a36"
+      },
+      "role_trace": {
+        "path": "iteration-03/role-trace.json",
+        "sha256": "c31a900ac61e8ed31434763c2f404aca56f8f21ab35fdb4bf1bafdce964ec15d"
+      }
+    },
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-04",
+      "title": "Return Backhand · Slender saber refinement",
+      "selection_label": "Iteration 4 · Slender saber refinement",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-feedback-04",
+      "candidate_sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+      "gain_summary": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline. Single connected blade/grasp, no definite split or detached fragment.",
+      "remaining_summary": "Blade-face-up remains ambiguous Motion/native registration unverified",
+      "edith_user_facing_summary": "Accept Ultron: reducing blade breadth addresses the obvious prop-size concern without introducing a visible split. The remaining blade-plane ambiguity is not a proven wrong orientation, so I will not label it an established defect or repaint the horse.\n\nFinal authorized edit: add a modest, physically coherent upper-facing bevel/highlight and wrist orientation cue in F5–6 while preserving current saber length/width/curve, grasp, mount and other poses. This is the fifth and last image call. After independent review we stop, retain all attempts, and return the range for Fangfang's judgment rather than keep generating until a convenient pass.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T08:18:51.303931+00:00",
+        "decision": "Review complete; acceptance not established",
+        "summary": "Backward blade slenderness improved versus03 without visible split. Remaining concern is observable face-up orientation, not an invented topology failure.",
+        "gains": [
+          "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline.",
+          "Single connected blade/grasp, no definite split or detached fragment."
+        ],
+        "remaining": [
+          "Blade-face-up remains ambiguous",
+          "Motion/native registration unverified"
+        ],
+        "inspection": "All eight static drawings inspected independently; no timed playback was watched by the reviewer. Display uses original native key times with fixed per-version crops. Generated atlas layout differs from source; this is not a registered native-asset replacement.",
+        "confidence": "Bounded static evidence, not gameplay feel."
+      },
+      "human_feedback": "No final user acceptance. Latest is not automatically best. All five outputs remain preserved.",
+      "scope": "Complete mounted Return Backhand; preserve identity, single connected saber, planted mount, and upward-facing blade during backward slash. Five-call cap reached. No gameplay or timing edits.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original atlas"
+        },
+        {
+          "path": "iteration-04/candidate.png",
+          "sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+          "role": "Actual generated candidate"
+        }
+      ],
+      "config": {
+        "path": "iteration-04/config.json",
+        "sha256": "78cb66f2427f324d4d1663fc801ee3928212bc8235f786e0903f04782b6521d5"
+      },
+      "review_annotations": {
+        "path": "iteration-04/review-annotations.json",
+        "sha256": "2631cbf36c1ae871ec984f0043e1383ec7a0ff235f512ded9a997368a76e3f99"
+      },
+      "role_trace": {
+        "path": "iteration-04/role-trace.json",
+        "sha256": "69d6f5af1d2b175f8415486b9e32e9e0cd66b5b4a968307ec34902cc72409c48"
+      }
+    },
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-05",
+      "title": "Return Backhand · Final blade-plane refinement",
+      "selection_label": "Iteration 5 · Final blade-plane refinement",
+      "media_type": "animation",
+      "candidate_id": "return-backhand-feedback-05",
+      "candidate_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+      "review_status": "REVIEW_COMPLETE",
+      "candidate_disposition": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+      "gain_summary": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04.",
+      "remaining_summary": "Face-up blade orientation remains unproven Whole-action motion and original registration not assessed",
+      "edith_user_facing_summary": "Accept Ultron's final bounded review: no material blade-orientation gain versus04 is discernible, although the saber is connected and no frame6 split is confirmed. Stop at five actual calls. Keep01–05 and their original judgments; do not claim final05 wins. Face-up interpretation, native registration and timed action quality still need honest review. The separate book-context experiment cannot retrospectively label these image calls book-informed.",
+      "verdict": {
+        "reviewer": "Ultron",
+        "reviewed_at": "2026-11-18T08:21:26.735201+00:00",
+        "decision": "Review complete; acceptance not established",
+        "summary": "No material blade-orientation improvement discernible from04. Continuous curved saber retained, but face-up criterion remains uncertain.",
+        "gains": [
+          "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04."
+        ],
+        "remaining": [
+          "Face-up blade orientation remains unproven",
+          "Whole-action motion and original registration not assessed"
+        ],
+        "inspection": "All eight static drawings inspected independently; no timed playback was watched by the reviewer. Display uses original native key times with fixed per-version crops. Generated atlas layout differs from source; this is not a registered native-asset replacement.",
+        "confidence": "Bounded static evidence, not gameplay feel."
+      },
+      "human_feedback": "No final user acceptance. Latest is not automatically best. All five outputs remain preserved.",
+      "scope": "Complete mounted Return Backhand; preserve identity, single connected saber, planted mount, and upward-facing blade during backward slash. Five-call cap reached. No gameplay or timing edits.",
+      "reviewed_assets": [
+        {
+          "path": "baseline.png",
+          "sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+          "role": "Original atlas"
+        },
+        {
+          "path": "iteration-05/candidate.png",
+          "sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+          "role": "Actual generated candidate"
+        }
+      ],
+      "config": {
+        "path": "iteration-05/config.json",
+        "sha256": "7617c8ed7c7d0960cd86f4906977b283c7c79c262f7430e2f97a05d2b9b6e1b4"
+      },
+      "review_annotations": {
+        "path": "iteration-05/review-annotations.json",
+        "sha256": "d34ca1bbb65c1dfc9ccd0ec3686a80e48c8ecbc9beb8251a6f47f97dc3e536e3"
+      },
+      "role_trace": {
+        "path": "iteration-05/role-trace.json",
+        "sha256": "2c0221ca9824749e7474ae2df66035c4b7636d062e4e44bd1ffb8bb363ec581f"
+      }
+    }
+  ]
+}

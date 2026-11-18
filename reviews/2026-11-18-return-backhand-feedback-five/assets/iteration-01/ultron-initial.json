@@ -1,0 +1,48 @@
+{
+  "artifact": "candidate.png",
+  "sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+  "stage": "independent initial assessment before baseline",
+  "evidence": "8-frame static sheet plus enlarged crops; no timed playback",
+  "verdict": "REVIEW_NEEDS_EVIDENCE",
+  "observations": [
+    "Eight mounted poses remain legible, dark armor/red tack identity consistent within candidate.",
+    "Frames 5 and 6 show leftward saber with upcurved tip; grip-to-blade appears connected, no definite frame-6 split observed at supplied resolution.",
+    "Frames 3,5,7 show translucent gray remnants around rear leg/tail and torso edges. Transparency/edge quality requires comparison with baseline.",
+    "Frame 6 blade has soft gray duplicate-like contour below the bright blade; cannot establish whether edge/alpha halo or actual second blade from this view.",
+    "No timed motion assessment, speed/feel or whole-action acceptance."
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "finding": "Mounted rest, saber down-forward."
+    },
+    {
+      "frame": 2,
+      "finding": "Saber forward at low chest level."
+    },
+    {
+      "frame": 3,
+      "finding": "Raised forward saber; gray residual along rear outline."
+    },
+    {
+      "frame": 4,
+      "finding": "Near-vertical saber beside helmet; connection small/partly occluded."
+    },
+    {
+      "frame": 5,
+      "finding": "Backward extension, visible continuous hilt and upward tip."
+    },
+    {
+      "frame": 6,
+      "finding": "Backward saber lower; broad gray lower contour merits close check, not confirmed split."
+    },
+    {
+      "frame": 7,
+      "finding": "Downward saber recovery; continuous visible blade, gray rear outline."
+    },
+    {
+      "frame": 8,
+      "finding": "Rest-like forward saber."
+    }
+  ]
+}

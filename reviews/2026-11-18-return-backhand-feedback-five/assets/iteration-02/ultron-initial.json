@@ -1,0 +1,46 @@
+{
+  "artifact_sha256": "d8cd2f4c531fb8cfc3fceedf99b50069b82794c47d440ebfa8ec40524137b69c",
+  "stage": "Independent current assessment before baseline comparison; reviewer retains memory of iteration01 review",
+  "evidence": "Entire 4x2 alpha-composited static candidate, 1774x887; no playback",
+  "observations": [
+    "All eight mounted knight poses are crisp and legible, consistent dark armor/red tack identity.",
+    "Frames5\u20136 have a continuous single saber from glove/guard to tip; no visible split.",
+    "Frame5 tip curves upward; frame6 is nearly horizontal with shallow downward/left tip. This is a pose observation, not proof of 3D blade-face orientation.",
+    "Horse lower body and hoof locations appear visually stable within this sheet; exact registration not measured.",
+    "Frames1 and8 return to similar saber-down pose. No static failure justifies claiming broken recovery."
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest pose, blade continuous."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber continuous."
+    },
+    {
+      "frame": 3,
+      "observation": "Forward raised saber continuous and wrist readable."
+    },
+    {
+      "frame": 4,
+      "observation": "Upright saber continuous, forearm readable."
+    },
+    {
+      "frame": 5,
+      "observation": "Extended backward saber, single connected blade with upturned tip."
+    },
+    {
+      "frame": 6,
+      "observation": "Lower backward extension, single connected blade, face-up interpretation remains uncertain."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward recovery, single connected blade."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like recovery, single connected blade."
+    }
+  ]
+}

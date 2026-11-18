@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "call_count_this_iteration": 1,
+  "call_count_total": 4,
+  "size": [
+    1774,
+    887
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+  "status": "generated-and-independently-reviewed; user acceptance not recorded",
+  "submitted_at": "2026-11-18T08:16:31.649Z",
+  "returned_at": "2026-11-18T08:17:10.645Z",
+  "reference": "Previous candidate 3"
+}

@@ -1,0 +1,179 @@
+{
+  "experiment_id": "RETURN-BACKHAND-FEEDBACK-05",
+  "title": "Return Backhand feedback run",
+  "view_box": [
+    0,
+    0,
+    443.5,
+    443.5
+  ],
+  "versions": [
+    {
+      "id": "native-source",
+      "label": "Original source · fixed crop",
+      "sprite": "../baseline.png",
+      "sprite_sha256": "37afa7be7822ba0cbd769e89c5ac4c7d88722aa373f13390a9afaca7a6b0aa10",
+      "cell_size": [
+        1024,
+        768
+      ],
+      "view_box": [
+        350,
+        180,
+        430,
+        430
+      ],
+      "rects": [
+        [
+          0,
+          0,
+          1024,
+          768
+        ],
+        [
+          1024,
+          0,
+          1024,
+          768
+        ],
+        [
+          2048,
+          0,
+          1024,
+          768
+        ],
+        [
+          3072,
+          0,
+          1024,
+          768
+        ],
+        [
+          0,
+          768,
+          1024,
+          768
+        ],
+        [
+          1024,
+          768,
+          1024,
+          768
+        ],
+        [
+          2048,
+          768,
+          1024,
+          768
+        ],
+        [
+          3072,
+          768,
+          1024,
+          768
+        ]
+      ],
+      "times": [
+        0,
+        0.18,
+        0.32,
+        0.46,
+        0.55,
+        0.64,
+        0.78,
+        0.94
+      ],
+      "duration": 1.29,
+      "art_candidate": false
+    },
+    {
+      "id": "return-backhand-feedback-05",
+      "label": "Final blade-plane refinement",
+      "sprite": "candidate.png",
+      "sprite_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+      "cell_size": [
+        443.5,
+        443.5
+      ],
+      "view_box": [
+        0,
+        0,
+        443.5,
+        443.5
+      ],
+      "rects": [
+        [
+          0.0,
+          0.0,
+          443.5,
+          443.5
+        ],
+        [
+          443.5,
+          0.0,
+          443.5,
+          443.5
+        ],
+        [
+          887.0,
+          0.0,
+          443.5,
+          443.5
+        ],
+        [
+          1330.5,
+          0.0,
+          443.5,
+          443.5
+        ],
+        [
+          0.0,
+          443.5,
+          443.5,
+          443.5
+        ],
+        [
+          443.5,
+          443.5,
+          443.5,
+          443.5
+        ],
+        [
+          887.0,
+          443.5,
+          443.5,
+          443.5
+        ],
+        [
+          1330.5,
+          443.5,
+          443.5,
+          443.5
+        ]
+      ],
+      "times": [
+        0,
+        0.18,
+        0.32,
+        0.46,
+        0.55,
+        0.64,
+        0.78,
+        0.94
+      ],
+      "duration": 1.29,
+      "art_candidate": true
+    }
+  ],
+  "authored_markers": [
+    {
+      "name": "active_start",
+      "time": 0.55
+    },
+    {
+      "name": "active_end",
+      "time": 0.77
+    }
+  ],
+  "notes_api": "/api/review-notes/RETURN-BACKHAND-FEEDBACK-05"
+}

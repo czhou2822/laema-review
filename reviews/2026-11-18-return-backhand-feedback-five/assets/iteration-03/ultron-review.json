@@ -1,0 +1,151 @@
+{
+  "verdict": "REVIEW_COMPLETE",
+  "readiness": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+  "goal_satisfied": "not established",
+  "initial_assessment": "ultron-initial.json",
+  "artifact_sha256": "3d81890516795653ab6f96448c731e8922d937014dcaae62d92bf7710f5ecd46",
+  "region_convention": "[x1,y1,x2,y2] normalized within corresponding complete current 4x2 sheet cell",
+  "summary": "Visible change now exists in backward blade faces, but blade width/shape consistency through recovery needs evidence. No split observed.",
+  "findings": [
+    {
+      "id": "RB-05",
+      "severity": "Major",
+      "evidence_status": "Established visible change; continuity risk unverified",
+      "state": "open",
+      "confidence": "high on broadening, medium on identity risk",
+      "title": "Backward saber broadens substantially relative to other poses",
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "regions": {
+        "5": [
+          0.03,
+          0.14,
+          0.33,
+          0.34
+        ],
+        "6": [
+          0.03,
+          0.32,
+          0.35,
+          0.43
+        ],
+        "7": [
+          0.36,
+          0.43,
+          0.51,
+          0.77
+        ]
+      },
+      "observation": "F5\u20136 have much wider blade faces than predecessor/baseline and F1\u20134/F8; F7 also broadens. This is the new noticeable change, but a credible axial rotation could explain part of width change. Static evidence does not establish a prop substitution.",
+      "impact": "Risk of reading as a different broad saber during the return slash rather than the same saber rotated.",
+      "repair_condition": "Demonstrate a consistent blade shape/length/grasp through the orientation change and F6\u2192F7\u2192F8 recovery; keep face-up cue without unexplained shape jumps.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-04",
+      "severity": "Major",
+      "evidence_status": "Partially supported",
+      "state": "evidence-needed",
+      "confidence": "medium",
+      "title": "Upward blade face has stronger cues, not conclusive throughout sweep",
+      "frames": [
+        5,
+        6
+      ],
+      "region": [
+        0.03,
+        0.14,
+        0.35,
+        0.43
+      ],
+      "observation": "Broad bright surface and upper concavity are more readable than02; no timed sweep or axial-rotation evidence.",
+      "repair_condition": "Check normal-speed orientation continuity rather than treating a broad white blade as sufficient.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-03",
+      "severity": "Blocking",
+      "evidence_status": "Unverified",
+      "state": "evidence-needed",
+      "confidence": "high",
+      "title": "Motion/native registration unverified",
+      "observation": "Static artwork only; changed atlas layout versus original.",
+      "repair_condition": "Authorized timed playback and native registration evidence.",
+      "owner": "Edith"
+    }
+  ],
+  "gains": [
+    {
+      "frames": [
+        5,
+        6
+      ],
+      "region": [
+        0.03,
+        0.14,
+        0.37,
+        0.43
+      ],
+      "observation": "A single connected, shaded blade face is plainly visible in both backward poses; no separated frame6 segment."
+    },
+    {
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "region": [
+        0.08,
+        0.03,
+        0.91,
+        0.93
+      ],
+      "observation": "Crisp armor and recognizable mounted identity remain; no clear new hoof drift visible."
+    }
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Thin curved saber at rest."
+    },
+    {
+      "frame": 2,
+      "observation": "Thin curved forward saber."
+    },
+    {
+      "frame": 3,
+      "observation": "Raised thin saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Broad backward blade with bright upper-facing surface cues, connected."
+    },
+    {
+      "frame": 6,
+      "observation": "Broad low backward blade, connected, upward-curved tip."
+    },
+    {
+      "frame": 7,
+      "observation": "Broad downturned recovery blade, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Thin curved rest saber returns."
+    }
+  ],
+  "comparison": "Compared03 against actual02 and baseline-inspection after initial save. Blade broadening is observable; overall pose sequence otherwise closely resembles baseline. Not a motion-quality verdict.",
+  "next_repair_target": "Blade identity/axial orientation continuity at frames4\u20138, particularly6\u21927\u21928; no speculative horse repaint indicated.",
+  "public_highlighting": "Highlight actual broadening in red only with caption width/shape continuity concern, not proven broken prop. Green connected face-readable saber. Keep unverified timing/registration as text."
+}

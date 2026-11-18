@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "call_count": 1,
+  "size": [
+    2048,
+    768
+  ],
+  "mode": "RGBA",
+  "sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "status": "generated-and-independently-reviewed; user acceptance not recorded",
+  "prompt_saved_at": "2026-11-18T08:08:08.124384+00:00",
+  "candidate_saved_at": "2026-11-18T08:08:56.067883+00:00",
+  "timestamp_note": "Filesystem save timestamps only; actual generator submission/return times not separately recorded.",
+  "reference": "Original source"
+}

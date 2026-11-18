@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-FEEDBACK-05",
+  "candidate_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T08:21:26.735201+00:00",
+  "provenance": "Recorded independent static-artifact review. Regions are review notes, not painted artwork; motion remains for human review.",
+  "issues": [
+    {
+      "id": "RB-04-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        70.96000000000001,
+        137.48499999999999,
+        79.83000000000001
+      ],
+      "label": "Face-up blade orientation remains unproven",
+      "reason": "Upturned tip and narrow bright blade face remain nearly the same as04; could read as viewer-facing rather than upward-facing. No meaningful improvement in this criterion discernible.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-04-F6",
+      "frame": 6,
+      "region": [
+        17.740000000000002,
+        141.92000000000002,
+        146.35500000000002,
+        48.785
+      ],
+      "label": "Face-up blade orientation remains unproven",
+      "reason": "Upturned tip and narrow bright blade face remain nearly the same as04; could read as viewer-facing rather than upward-facing. No meaningful improvement in this criterion discernible.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    }
+  ],
+  "improvements": [
+    {
+      "id": "GAIN-5-0-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        70.96000000000001,
+        137.48499999999999,
+        79.83000000000001
+      ],
+      "label": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04.",
+      "reason": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-5-0"
+    },
+    {
+      "id": "GAIN-5-0-F6",
+      "frame": 6,
+      "region": [
+        17.740000000000002,
+        141.92000000000002,
+        146.35500000000002,
+        48.785
+      ],
+      "label": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04.",
+      "reason": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-5-0"
+    }
+  ]
+}

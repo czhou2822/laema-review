@@ -1,0 +1,4 @@
+# Edith interpretation
+Accept Ultron's review: the connected backward saber is a useful local change, not whole-action acceptance. The gray RGB preview was misleading; alpha-composited evidence retracts that suspected defect. The output lost detail and changed armor/hoof silhouettes, so it is not a faithful replacement.
+
+Next bounded change: stop reducing the huge mostly-empty native atlas; use a compact original-reference sheet for generation to allocate more pixels to the mounted figure. Ask for the same eight keys, mounted identity and unchanged horse contacts, with wrist/blade corrections only. No timing/gameplay change. This is a generation input/framing adjustment, not manual repaint or inferred approval. The question of visible blade face remains stronger than merely an upward-curved tip.

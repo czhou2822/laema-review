@@ -1,0 +1,3 @@
+Creative-brief excerpt from actual Edith-to-Ume handoff. Operational file routing omitted.
+
+Generate one complete 8-frame 4x2 mounted dark knight return-backhand sheet, preserving character/horse registration, fixing blade face-up backward slash and frame6 split. No gameplay/timing edits. Use image_gen tool, preserve transparency.

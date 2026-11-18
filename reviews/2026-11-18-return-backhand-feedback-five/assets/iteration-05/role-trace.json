@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-FEEDBACK-05",
+  "iterations": [
+    {
+      "id": "RETURN-BACKHAND-FEEDBACK-05",
+      "label": "Iteration 5: Final blade-plane refinement",
+      "candidate_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+      "status": "Independently reviewed; not accepted",
+      "events": [
+        {
+          "kind": "edith_to_ume",
+          "actor": "Edith",
+          "recipient": "Ume",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:24:32.675639+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "edith-brief.txt",
+            "sha256": "4cc17a6789a2360b630f14084d4cac66874bf52dc8546549ff3cc2c31930feca"
+          }
+        },
+        {
+          "kind": "ume_to_engine",
+          "actor": "Ume",
+          "recipient": "Image engine",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:19:35.816857+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "prompt.txt",
+            "sha256": "17b727e5dacf703585a12820f3699732257d425df6fbff8a10ff00872d50e0ec"
+          }
+        },
+        {
+          "kind": "ultron_assessment",
+          "actor": "Ultron",
+          "recipient": "Edith",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:21:26.735201+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "ultron-review.json",
+            "sha256": "c6ebf817d29838155d6f77be13fa37683c1079257f9d0d123521ab8cfed45b93"
+          }
+        },
+        {
+          "kind": "ultron_to_edith",
+          "actor": "Ultron",
+          "recipient": "Edith",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:21:26.735201+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "ultron-review.json",
+            "sha256": "c6ebf817d29838155d6f77be13fa37683c1079257f9d0d123521ab8cfed45b93"
+          }
+        },
+        {
+          "kind": "edith_interpretation",
+          "actor": "Edith",
+          "recipient": "Review record",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:22:28.634813+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "edith-interpretation.md",
+            "sha256": "8b3c3a11c1f93494b30a288c8483c0b3f8b6ea4ec1cd5f0510a12c9664da0dfd"
+          }
+        },
+        {
+          "kind": "coordination",
+          "actor": "Jarvis",
+          "recipient": "Review record",
+          "status": "Recorded artifact; not final acceptance",
+          "recorded_at": "2026-11-18T08:20:33.910332+00:00",
+          "note": "Time shown is local record-save time unless provenance states generator submission/return time.",
+          "artifact": {
+            "path": "provenance.json",
+            "sha256": "945212b50903e5d65f4c1de9ff2e232a301f163e6b75ba7a893bb62fd6b7b2e8"
+          }
+        }
+      ]
+    }
+  ]
+}

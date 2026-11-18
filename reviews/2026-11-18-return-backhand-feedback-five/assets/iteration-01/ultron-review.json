@@ -1,0 +1,131 @@
+{
+  "verdict": "REVIEW_COMPLETE",
+  "goal_satisfied": false,
+  "initial_assessment": "ultron-initial.json",
+  "evidence": "All 8 static cells; enlarged alpha-composited matched normalized baseline/candidate crops. No playback; hidden RGB in initial crop is explicitly excluded below.",
+  "artifact_sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+  "initial_assessment_correction": "Gray remnants noted initially vanish under correct alpha compositing. They are not established visual defects. Frame 6 does not show a confirmed blade split.",
+  "findings": [
+    {
+      "id": "RB-01",
+      "severity": "Major",
+      "status": "Established",
+      "confidence": "high",
+      "title": "Baseline rendering detail and silhouette are not preserved",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "region": [
+        0.43,
+        0.33,
+        0.66,
+        0.67
+      ],
+      "observation": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "repair_condition": "Preserve source horse/rider geometry and crisp rendering outside explicitly changing arm/saber regions, with source-scale comparable evidence.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-02",
+      "severity": "Minor",
+      "status": "Established",
+      "confidence": "medium",
+      "title": "Horse silhouette changes rather than stays registered",
+      "frames": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "region": [
+        0.46,
+        0.57,
+        0.63,
+        0.68
+      ],
+      "observation": "Matched crops show rear-leg/hoof shapes and spacing differing from baseline; hoof shift is small, so no claim of gross sliding or motion quality.",
+      "repair_condition": "Show matched overlay or unchanged source lower-body geometry for all cells, retaining hoof contacts.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-03",
+      "severity": "Blocking",
+      "status": "Unverified",
+      "confidence": "high",
+      "title": "Timed action evidence absent",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "observation": "Static sheet cannot establish timing, full motion continuity or action feel.",
+      "repair_condition": "Review authorized normal-speed playback at stated native timing before whole-action acceptance.",
+      "owner": "Edith"
+    }
+  ],
+  "gains": [
+    {
+      "frames": [
+        5,
+        6
+      ],
+      "region": [
+        0.39,
+        0.38,
+        0.54,
+        0.51
+      ],
+      "observation": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "limit": "Tip curvature alone does not prove 3D blade-face orientation."
+    }
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "finding": "Mounted rest, saber down-forward."
+    },
+    {
+      "frame": 2,
+      "finding": "Saber forward at low chest level."
+    },
+    {
+      "frame": 3,
+      "finding": "Raised forward saber; apparent gray residual retracted after alpha compositing."
+    },
+    {
+      "frame": 4,
+      "finding": "Near-vertical saber beside helmet; connection small/partly occluded."
+    },
+    {
+      "frame": 5,
+      "finding": "Backward extension, visible continuous hilt and upward tip."
+    },
+    {
+      "frame": 6,
+      "finding": "Backward saber lower; continuous saber in alpha-composited view, no established duplicate or split."
+    },
+    {
+      "frame": 7,
+      "finding": "Downward recovery, continuous visible blade; apparent gray rear residual retracted after alpha compositing."
+    },
+    {
+      "frame": 8,
+      "finding": "Rest-like forward saber."
+    }
+  ],
+  "comparison": "Compared only with supplied baseline, after immutable initial assessment. No earlier candidate narrative read.",
+  "repair_priority": "Preserve baseline crispness and registered horse/lower body while retaining continuous saber. Need actual timed evidence for motion verdict.",
+  "region_convention": "[x1,y1,x2,y2], normalized 0..1 within corresponding complete sheet cell, not sprite crop"
+}

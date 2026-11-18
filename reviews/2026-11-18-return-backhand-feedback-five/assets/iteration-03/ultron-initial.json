@@ -1,0 +1,46 @@
+{
+  "artifact_sha256": "3d81890516795653ab6f96448c731e8922d937014dcaae62d92bf7710f5ecd46",
+  "stage": "Initial current-only inspection, before reopening baseline/predecessor; retains previous reviews in memory",
+  "evidence": "All eight alpha-composited static cells, no playback",
+  "observations": [
+    "Frames5 and6 show broad, shaded blade faces with an upward concavity and single guard-to-tip connection.",
+    "Blade appears conspicuously broader in5\u20136 than narrow saber in1\u20134 and8; frame7 also broadens. Rotation could expose blade face, so physical shape discontinuity is a concern rather than established topology break.",
+    "No visible detached fragment or split in frame6.",
+    "Mounted identity, horse pose and hoof line remain visually consistent within sheet.",
+    "No timed motion claim."
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Thin curved saber at rest."
+    },
+    {
+      "frame": 2,
+      "observation": "Thin curved forward saber."
+    },
+    {
+      "frame": 3,
+      "observation": "Raised thin saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Broad backward blade with bright upper-facing surface cues, connected."
+    },
+    {
+      "frame": 6,
+      "observation": "Broad low backward blade, connected, upward-curved tip."
+    },
+    {
+      "frame": 7,
+      "observation": "Broad downturned recovery blade, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Thin curved rest saber returns."
+    }
+  ]
+}

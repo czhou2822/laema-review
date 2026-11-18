@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-FEEDBACK-04",
+  "candidate_sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T08:18:51.303931+00:00",
+  "provenance": "Recorded independent static-artifact review. Regions are review notes, not painted artwork; motion remains for human review.",
+  "issues": [
+    {
+      "id": "RB-04-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        70.96000000000001,
+        137.48499999999999,
+        79.83000000000001
+      ],
+      "label": "Blade-face-up remains ambiguous",
+      "reason": "Thin bright blade with upturned tip reads clearly, but visible shading/plane is insufficient to verify face-up rather than simply curved-up silhouette. Narrowing03 reduces its exaggerated width, also reduces broad-face cue.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-04-F6",
+      "frame": 6,
+      "region": [
+        17.740000000000002,
+        141.92000000000002,
+        146.35500000000002,
+        48.785
+      ],
+      "label": "Blade-face-up remains ambiguous",
+      "reason": "Thin bright blade with upturned tip reads clearly, but visible shading/plane is insufficient to verify face-up rather than simply curved-up silhouette. Narrowing03 reduces its exaggerated width, also reduces broad-face cue.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-04",
+      "severity": "Major"
+    }
+  ],
+  "improvements": [
+    {
+      "id": "RB-05-F5",
+      "frame": 5,
+      "region": [
+        22.175,
+        70.96000000000001,
+        137.48499999999999,
+        79.83000000000001
+      ],
+      "label": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline.",
+      "reason": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-4-0"
+    },
+    {
+      "id": "RB-05-F6",
+      "frame": 6,
+      "region": [
+        17.740000000000002,
+        141.92000000000002,
+        146.35500000000002,
+        48.785
+      ],
+      "label": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline.",
+      "reason": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-4-0"
+    },
+    {
+      "id": "GAIN-4-1-F5",
+      "frame": 5,
+      "region": [
+        17.740000000000002,
+        66.52499999999999,
+        212.88000000000002,
+        274.96999999999997
+      ],
+      "label": "Single connected blade/grasp, no definite split or detached fragment.",
+      "reason": "Single connected blade/grasp, no definite split or detached fragment.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-4-1"
+    },
+    {
+      "id": "GAIN-4-1-F6",
+      "frame": 6,
+      "region": [
+        17.740000000000002,
+        66.52499999999999,
+        212.88000000000002,
+        274.96999999999997
+      ],
+      "label": "Single connected blade/grasp, no definite split or detached fragment.",
+      "reason": "Single connected blade/grasp, no definite split or detached fragment.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-4-1"
+    },
+    {
+      "id": "GAIN-4-1-F7",
+      "frame": 7,
+      "region": [
+        17.740000000000002,
+        66.52499999999999,
+        212.88000000000002,
+        274.96999999999997
+      ],
+      "label": "Single connected blade/grasp, no definite split or detached fragment.",
+      "reason": "Single connected blade/grasp, no definite split or detached fragment.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-4-1"
+    }
+  ]
+}

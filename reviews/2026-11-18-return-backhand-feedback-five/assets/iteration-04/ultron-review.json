@@ -1,0 +1,127 @@
+{
+  "verdict": "REVIEW_COMPLETE",
+  "goal_satisfied": "not established; human acceptance reserved",
+  "readiness": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+  "initial_assessment": "ultron-initial.json",
+  "artifact_sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+  "region_convention": "[x1,y1,x2,y2] normalized within complete corresponding current sheet cell, 4x2",
+  "summary": "Backward blade slenderness improved versus03 without visible split. Remaining concern is observable face-up orientation, not an invented topology failure.",
+  "findings": [
+    {
+      "id": "RB-04",
+      "severity": "Major",
+      "state": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "medium",
+      "title": "Blade-face-up remains ambiguous",
+      "frames": [
+        5,
+        6
+      ],
+      "regions": {
+        "5": [
+          0.05,
+          0.16,
+          0.36,
+          0.34
+        ],
+        "6": [
+          0.04,
+          0.32,
+          0.37,
+          0.43
+        ]
+      },
+      "observation": "Thin bright blade with upturned tip reads clearly, but visible shading/plane is insufficient to verify face-up rather than simply curved-up silhouette. Narrowing03 reduces its exaggerated width, also reduces broad-face cue.",
+      "repair_condition": "Make upward-facing plane/edge relationship legible while preserving this slender curved saber and continuous guard-to-tip path; retain stable horse/body.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-03",
+      "severity": "Blocking",
+      "state": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "high",
+      "title": "Motion/native registration unverified",
+      "observation": "All evidence is static; native atlas layout differs from original. Small apparent horse pose differences require overlays before calling drift.",
+      "repair_condition": "Matched cell overlays and authorized normal-speed playback before motion acceptance.",
+      "owner": "Edith"
+    }
+  ],
+  "gains": [
+    {
+      "id": "RB-05",
+      "state": "improved and visually rechecked, continuity still needs playback",
+      "frames": [
+        5,
+        6
+      ],
+      "regions": {
+        "5": [
+          0.05,
+          0.16,
+          0.36,
+          0.34
+        ],
+        "6": [
+          0.04,
+          0.32,
+          0.37,
+          0.43
+        ]
+      },
+      "observation": "Broad-blade expansion from03 substantially reduced; slender saber appearance now closer to other poses and baseline."
+    },
+    {
+      "frames": [
+        5,
+        6,
+        7
+      ],
+      "region": [
+        0.04,
+        0.15,
+        0.52,
+        0.77
+      ],
+      "observation": "Single connected blade/grasp, no definite split or detached fragment."
+    }
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest curved saber, connected."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber, connected."
+    },
+    {
+      "frame": 3,
+      "observation": "Forward raised saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Near-vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Backward slender curved saber, connected, tip up."
+    },
+    {
+      "frame": 6,
+      "observation": "Backward low slender curved saber, connected, tip up."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward saber recovery, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like recovery, connected."
+    }
+  ],
+  "comparison": "Actual03 and baseline-inspection reopened after initial record. Material change is narrowing backward blade. No claim that narrower automatically means goal fulfilled.",
+  "next_bounded_repair": "If using final generation, concentrate only on unmistakable upward-facing plane cues in5\u20136 without changing weapon size/curvature, grip, horse, or other poses. Current evidence does not warrant a new horse correction or invented split fix.",
+  "public_highlighting": "Green5\u20136 for reduced broadening and connected saber. No red confirmed split or hoof drift. Orientation ambiguity should be labeled evidence-needed, not a demonstrated defect."
+}

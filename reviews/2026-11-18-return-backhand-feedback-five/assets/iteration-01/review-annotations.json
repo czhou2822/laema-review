@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "run_id": "RETURN-BACKHAND-FEEDBACK-01",
+  "candidate_sha256": "c07699a6be88da1b1891d9fca8869f68c6da0a29a07882aa7d3f693ba3b20777",
+  "reviewer": "Ultron",
+  "reviewed_at": "2026-11-18T08:12:27.375731+00:00",
+  "provenance": "Recorded independent static-artifact review. Regions are review notes, not painted artwork; motion remains for human review.",
+  "issues": [
+    {
+      "id": "RB-01-F1",
+      "frame": 1,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F2",
+      "frame": 2,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F3",
+      "frame": 3,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F4",
+      "frame": 4,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F5",
+      "frame": 5,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F6",
+      "frame": 6,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F7",
+      "frame": 7,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-01-F8",
+      "frame": 8,
+      "region": [
+        220.16,
+        126.72,
+        117.76000000000002,
+        130.56
+      ],
+      "label": "Baseline rendering detail and silhouette are not preserved",
+      "reason": "Candidate is half the source sheet resolution; at matched displayed scale helmet, armor, hand and hoof edges are visibly softer and rider boot/torso silhouette differs from source. Overall identity remains recognizable, but not a faithful retained sprite.",
+      "confidence": "high",
+      "sourceFindingId": "RB-01",
+      "severity": "Major"
+    },
+    {
+      "id": "RB-02-F5",
+      "frame": 5,
+      "region": [
+        235.52,
+        218.88,
+        87.03999999999999,
+        42.24000000000004
+      ],
+      "label": "Horse silhouette changes rather than stays registered",
+      "reason": "Matched crops show rear-leg/hoof shapes and spacing differing from baseline; hoof shift is small, so no claim of gross sliding or motion quality.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-02",
+      "severity": "Minor"
+    },
+    {
+      "id": "RB-02-F6",
+      "frame": 6,
+      "region": [
+        235.52,
+        218.88,
+        87.03999999999999,
+        42.24000000000004
+      ],
+      "label": "Horse silhouette changes rather than stays registered",
+      "reason": "Matched crops show rear-leg/hoof shapes and spacing differing from baseline; hoof shift is small, so no claim of gross sliding or motion quality.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-02",
+      "severity": "Minor"
+    },
+    {
+      "id": "RB-02-F7",
+      "frame": 7,
+      "region": [
+        235.52,
+        218.88,
+        87.03999999999999,
+        42.24000000000004
+      ],
+      "label": "Horse silhouette changes rather than stays registered",
+      "reason": "Matched crops show rear-leg/hoof shapes and spacing differing from baseline; hoof shift is small, so no claim of gross sliding or motion quality.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-02",
+      "severity": "Minor"
+    },
+    {
+      "id": "RB-02-F8",
+      "frame": 8,
+      "region": [
+        235.52,
+        218.88,
+        87.03999999999999,
+        42.24000000000004
+      ],
+      "label": "Horse silhouette changes rather than stays registered",
+      "reason": "Matched crops show rear-leg/hoof shapes and spacing differing from baseline; hoof shift is small, so no claim of gross sliding or motion quality.",
+      "confidence": "medium",
+      "sourceFindingId": "RB-02",
+      "severity": "Minor"
+    }
+  ],
+  "improvements": [
+    {
+      "id": "GAIN-1-0-F5",
+      "frame": 5,
+      "region": [
+        199.68,
+        145.92000000000002,
+        76.80000000000001,
+        49.92
+      ],
+      "label": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "reason": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-1-0"
+    },
+    {
+      "id": "GAIN-1-0-F6",
+      "frame": 6,
+      "region": [
+        199.68,
+        145.92000000000002,
+        76.80000000000001,
+        49.92
+      ],
+      "label": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "reason": "Backward saber is visibly upcurved; frame 5 tip rises more clearly than baseline. Frame 6 grip and blade read as one connected saber in alpha-composited view.",
+      "confidence": "Recorded bounded observation",
+      "sourceObservationId": "GAIN-1-0"
+    }
+  ]
+}

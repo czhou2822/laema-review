@@ -1,0 +1,126 @@
+{
+  "verdict": "REVIEW_COMPLETE",
+  "goal_satisfied": "not established",
+  "readiness": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+  "initial_assessment": "ultron-initial.json",
+  "artifact_sha256": "d8cd2f4c531fb8cfc3fceedf99b50069b82794c47d440ebfa8ec40524137b69c",
+  "evidence": "Eight static alpha-composited current poses, then baseline-inspection.png; predecessor review memory. No timed playback. No executor narrative.",
+  "region_convention": "[x1,y1,x2,y2] normalized 0..1 within corresponding complete current sheet cell (4 columns x 2 rows), not baseline/cropped display.",
+  "summary": "Crisp source-like identity and connected sabers; no demonstrated substantive action change from baseline. Blade face-up criterion and motion remain unverified.",
+  "findings": [
+    {
+      "id": "RB-04",
+      "severity": "Major",
+      "status": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "medium",
+      "title": "Blade-face-up goal is not demonstrated",
+      "frames": [
+        5,
+        6
+      ],
+      "region": [
+        0.05,
+        0.22,
+        0.45,
+        0.43
+      ],
+      "observation": "Backward poses and saber orientation closely resemble baseline; frame6 is a low leftward shallow arc. The still establishes a single connected saber, not which 3D blade face points upward. No material goal-directed change discernible in these poses.",
+      "repair_condition": "Provide observable blade-face orientation across backward sweep, preserving grasp and continuity; do not substitute tip curvature for face orientation.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-03",
+      "severity": "Blocking",
+      "status": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "high",
+      "title": "Motion and native registration not established",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "observation": "Changed sheet layout/scale prevents native atlas-registration claim. No timed playback establishes action timing or continuity.",
+      "repair_condition": "Matched native-cell or overlay evidence for registration and authorized timed playback for motion.",
+      "owner": "Edith"
+    }
+  ],
+  "gains": [
+    {
+      "id": "RB-01",
+      "state": "visually improved versus iteration01",
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "region": [
+        0.1,
+        0.03,
+        0.9,
+        0.92
+      ],
+      "observation": "Armor, face, glove and hoof detail are crisp again and source-like; avoids iteration01 softness."
+    },
+    {
+      "frames": [
+        5,
+        6
+      ],
+      "region": [
+        0.05,
+        0.22,
+        0.45,
+        0.43
+      ],
+      "observation": "Each backward pose has one visibly connected saber from glove/guard to tip; no confirmed split."
+    }
+  ],
+  "historical_comparison": "Candidate looks much closer to baseline than iteration01. Restored visual fidelity is not evidence that requested face-up action is repaired. RB-02 not currently demonstrated: within-sheet horse/hoof silhouettes look stable; native coordinates cannot be compared due changed layout.",
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest pose, blade continuous."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber continuous."
+    },
+    {
+      "frame": 3,
+      "observation": "Forward raised saber continuous and wrist readable."
+    },
+    {
+      "frame": 4,
+      "observation": "Upright saber continuous, forearm readable."
+    },
+    {
+      "frame": 5,
+      "observation": "Extended backward saber, single connected blade with upturned tip."
+    },
+    {
+      "frame": 6,
+      "observation": "Lower backward extension, single connected blade, face-up interpretation remains uncertain."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward recovery, single connected blade."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like recovery, single connected blade."
+    }
+  ],
+  "public_highlighting": "Green may mark connected saber / recovered detail. No red proven split or hoof drift. RB-04 is uncertainty, not proven defect; label as orientation not verified rather than red error."
+}

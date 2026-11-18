@@ -1,0 +1,117 @@
+{
+  "verdict": "REVIEW_COMPLETE",
+  "phase": "PRE-BOOK, frozen before reading source passages",
+  "goal_satisfied": "not established; no final acceptance or winner selected",
+  "readiness": "READY_FOR_USER_REVIEW_WITH_CONCERNS",
+  "artifact_sha256": "9447e359f5a636e5ec1e163441a46f1ef23225c6f0d97a2100fa714a25a08a98",
+  "initial_assessment": "ultron-initial.json",
+  "region_convention": "[x1,y1,x2,y2] normalized within corresponding complete current 4x2 sheet cell",
+  "summary": "No material blade-orientation improvement discernible from04. Continuous curved saber retained, but face-up criterion remains uncertain.",
+  "findings": [
+    {
+      "id": "RB-04",
+      "severity": "Major",
+      "state": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "medium",
+      "title": "Face-up blade orientation remains unproven",
+      "frames": [
+        5,
+        6
+      ],
+      "regions": {
+        "5": [
+          0.05,
+          0.16,
+          0.36,
+          0.34
+        ],
+        "6": [
+          0.04,
+          0.32,
+          0.37,
+          0.43
+        ]
+      },
+      "observation": "Upturned tip and narrow bright blade face remain nearly the same as04; could read as viewer-facing rather than upward-facing. No meaningful improvement in this criterion discernible.",
+      "repair_condition": "Evidence of the intended blade-plane orientation across backward sweep, not further unbounded variation.",
+      "owner": "Edith"
+    },
+    {
+      "id": "RB-03",
+      "severity": "Blocking",
+      "state": "evidence-needed",
+      "evidence_status": "Unverified",
+      "confidence": "high",
+      "title": "Whole-action motion and original registration not assessed",
+      "observation": "Static sheets only; layout/scale differs from original atlas. No normal-speed playback or native overlay.",
+      "repair_condition": "Authorized timed and registered comparison; user owns experiential acceptance.",
+      "owner": "Edith"
+    }
+  ],
+  "gains": [
+    {
+      "frames": [
+        5,
+        6
+      ],
+      "regions": {
+        "5": [
+          0.05,
+          0.16,
+          0.36,
+          0.34
+        ],
+        "6": [
+          0.04,
+          0.32,
+          0.37,
+          0.43
+        ]
+      },
+      "observation": "Guard-to-tip continuity retained, no definite frame6 split. This is retained quality, not new improvement over04."
+    }
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest saber, connected."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber, connected."
+    },
+    {
+      "frame": 3,
+      "observation": "Raised forward saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Backward saber with upturned tip and continuous guard, plane orientation uncertain."
+    },
+    {
+      "frame": 6,
+      "observation": "Low backward saber with upturned tip and continuous guard, plane orientation uncertain."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward recovery saber, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like saber recovery, connected."
+    }
+  ],
+  "comparison": "After saving initial, opened04 and baseline inspection.05 closely matches04 action silhouette. Relative baseline,5/6 tips curve upward more strongly; no clear whole-action improvement claim.",
+  "public_highlighting": "Green only retained continuous saber, explicitly not a new gain. No red fabricated split/hoof drift. Orientation and timing remain text uncertainty.",
+  "limits": [
+    "No books or executor narrative consulted before saved pre-book review.",
+    "No playback watched.",
+    "No native atlas or production acceptance.",
+    "Five-generation boundary honored; no generation performed by reviewer."
+  ]
+}

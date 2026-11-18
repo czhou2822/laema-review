@@ -1,0 +1,46 @@
+{
+  "artifact_sha256": "bff65478f0bd9ea0506c86560c237509af8ecadd89bb00b9e77a5fa976477e82",
+  "stage": "Current-only initial assessment before re-opening history; reviewer retains prior review context",
+  "evidence": "All8 alpha-composited static frames; no playback",
+  "observations": [
+    "Curved slender saber stays connected through all8 poses; no split in6.",
+    "Backward5\u20136 show upper concavity/upward tip with bright narrow face, but this alone cannot settle blade plane orientation.",
+    "Horse head/forelegs appear to lean slightly differently in4/8 than1/2; an exact registration claim needs overlay, not asserted failure.",
+    "Frame7 downward recovery is broader-looking than5/6 but foreshortening and orientation may account for it.",
+    "Mounted identity and crispness remain."
+  ],
+  "per_frame": [
+    {
+      "frame": 1,
+      "observation": "Rest curved saber, connected."
+    },
+    {
+      "frame": 2,
+      "observation": "Forward low saber, connected."
+    },
+    {
+      "frame": 3,
+      "observation": "Forward raised saber, connected."
+    },
+    {
+      "frame": 4,
+      "observation": "Near-vertical saber, connected."
+    },
+    {
+      "frame": 5,
+      "observation": "Backward slender curved saber, connected, tip up."
+    },
+    {
+      "frame": 6,
+      "observation": "Backward low slender curved saber, connected, tip up."
+    },
+    {
+      "frame": 7,
+      "observation": "Downward saber recovery, connected."
+    },
+    {
+      "frame": 8,
+      "observation": "Rest-like recovery, connected."
+    }
+  ]
+}
